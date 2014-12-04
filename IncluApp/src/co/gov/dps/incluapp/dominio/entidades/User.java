@@ -1,11 +1,14 @@
 package co.gov.dps.incluapp.dominio.entidades;
 
+import android.graphics.Bitmap;
+
 public class User {
 	
 	private String name;
 	private String lastName;
 	private String age;
 	private String profession;
+	private Bitmap profilePicture;
 	
 	
 	public String getName() {
@@ -32,6 +35,13 @@ public class User {
 	public void setProfession(String profession) {
 		this.profession = profession;
 	}
+	public Bitmap getProfilePicture() {
+		return profilePicture;
+	}
+	public void setProfilePicture(Bitmap profilePicture) {
+		this.profilePicture = profilePicture;
+	}
+	
 	
 	
 

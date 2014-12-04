@@ -1,14 +1,16 @@
 package co.gov.dps.incluapp.dominio.entidades.experiencias;
 
 import co.gov.dps.incluapp.dominio.entidades.Ubicacion;
+import co.gov.dps.incluapp.dominio.entidades.User;
 import android.graphics.Bitmap;
 
 public class Experiencia {
 	
 	private String title;
 	private String description;
-	private String user;
+	private User user;
 	private Ubicacion ubication;
+	private boolean estado;
 	
 	public String getTitle() {
 		return title;
@@ -22,10 +24,10 @@ public class Experiencia {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public String getUser() {
+	public User getUser() {
 		return user;
 	}
-	public void setUser(String user) {
+	public void setUser(User user) {
 		this.user = user;
 	}
 	public Ubicacion getUbication() {
@@ -34,6 +36,13 @@ public class Experiencia {
 	public void setUbication(Ubicacion ubication) {
 		this.ubication = ubication;
 	}
+	public boolean isEstado() {
+		return estado;
+	}
+	public void setEstado(boolean estado) {
+		this.estado = estado;
+	}
+	
 	
 	
 	

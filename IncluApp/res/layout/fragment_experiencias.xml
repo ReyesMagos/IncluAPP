@@ -11,7 +11,7 @@
     tools:context="co.gov.dps.incluapp.Experiencias$PlaceholderFragment" >
 
     <ListView
-        android:id="@+id/listView1"
+        android:id="@+id/lv_expiriences"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
     </ListView>

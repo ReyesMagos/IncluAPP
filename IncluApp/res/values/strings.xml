@@ -4,5 +4,35 @@
     <string name="app_name">IncluApp</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_navigation_activity_main">NavigationActivityMain</string>
+    <string name="title_section1">Experiencias</string>
+    <string name="title_section2">Proyectos</string>
+    <string name="title_section3">Mapas</string>
+    <string name="title_section4">Eventos</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    
+    <!-- Navigation Strings -->
+    <!-- Navigation Drawer-->
+    <array name="nav_drawer_titles">
+        <item>Experiencias</item>
+        <item>Proyectos</item>
+        <item>Mapas</item>
+        <item>Eventos</item>
+        <item>Iniciar Sesión</item>
+    </array>
+
+    <array name="nav_drawer_icons">
+        <item>@drawable/task</item>
+        <item>@drawable/grades</item>
+        <item>@drawable/messages</item>
+    </array>
+    
+    <string name="desc_list_item_icon">Item Icon</string>
+    
+
+    <string name="title_activity_experiencias">Experiencias</string>
+
 
 </resources>

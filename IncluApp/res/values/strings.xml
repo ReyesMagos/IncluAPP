@@ -4,6 +4,7 @@
     <string name="app_name">IncluApp</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+<<<<<<< HEAD
     <string name="title_activity_navigation_activity_main">NavigationActivityMain</string>
     <string name="title_section1">Experiencias</string>
     <string name="title_section2">Proyectos</string>
@@ -31,5 +32,8 @@
     
     <string name="desc_list_item_icon">Item Icon</string>
     
+=======
+    <string name="title_activity_experiencias">Experiencias</string>
+>>>>>>> oscar
 
 </resources>

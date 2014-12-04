@@ -51,6 +51,7 @@ public final class R {
         public static final int task=0x7f02000a;
     }
     public static final class id {
+<<<<<<< HEAD
         public static final int action_example=0x7f0a0008;
         public static final int action_settings=0x7f0a0007;
         public static final int container=0x7f0a0001;
@@ -86,6 +87,32 @@ public final class R {
         public static final int title_section2=0x7f060005;
         public static final int title_section3=0x7f060006;
         public static final int title_section4=0x7f060007;
+=======
+        public static final int LinearLayout1=0x7f080005;
+        public static final int action_settings=0x7f080007;
+        public static final int container=0x7f080000;
+        public static final int im_icon=0x7f080001;
+        public static final int im_profile=0x7f080004;
+        public static final int lv_expiriences=0x7f080006;
+        public static final int txt_description=0x7f080003;
+        public static final int txt_title=0x7f080002;
+    }
+    public static final class layout {
+        public static final int activity_experiencias=0x7f030000;
+        public static final int activity_timeline=0x7f030001;
+        public static final int experiencias_custom_list_layout=0x7f030002;
+        public static final int fragment_experiencias=0x7f030003;
+    }
+    public static final class menu {
+        public static final int experiencias=0x7f070000;
+        public static final int timeline=0x7f070001;
+    }
+    public static final class string {
+        public static final int action_settings=0x7f050002;
+        public static final int app_name=0x7f050000;
+        public static final int hello_world=0x7f050001;
+        public static final int title_activity_experiencias=0x7f050003;
+>>>>>>> oscar
     }
     public static final class style {
         /** 

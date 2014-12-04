@@ -1,16 +1,17 @@
-package co.gov.dps.incluapp.dominio.entidades.projectos;
+package co.gov.dps.incluapp.dominio.entidades.factory.proyectos;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import co.gov.dps.incluapp.dominio.entidades.projectos.Proyecto;
 
-public class ProyectosSingleton {
+public class FactoryProyectos implements IFactoryProyectos {
 	
-	private static ProyectosSingleton aProyectosSingleton;
+	private static FactoryProyectos aProyectosSingleton;
 
 	private List<Proyecto> proyectos;
 	
-	public ProyectosSingleton(){
+	public FactoryProyectos(){
 		
 		this.proyectos = new ArrayList<Proyecto>();
 		
@@ -114,17 +115,17 @@ public class ProyectosSingleton {
 	}
 	
 	
-	
+	@Override
 	public List<Proyecto> getProyectos() {
 		return proyectos;
 	}
 
 
 	//Singleton
-	public static ProyectosSingleton getInstance(){
+	public static FactoryProyectos getInstance(){
 		
 		if (aProyectosSingleton == null){
-			aProyectosSingleton = new ProyectosSingleton();
+			aProyectosSingleton = new FactoryProyectos();
 		}
 		return aProyectosSingleton;
 		

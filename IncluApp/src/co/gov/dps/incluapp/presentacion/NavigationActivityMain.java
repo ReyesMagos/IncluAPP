@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import co.gov.dps.incluapp.R;
+import co.gov.dps.incluapp.dominio.entidades.experiencias.fragments.ExperienciaFragment;
 import co.gov.dps.incluapp.presentacion.timeline.fragments.TimelineFragment;
 
 public class NavigationActivityMain extends Activity implements
@@ -51,6 +52,9 @@ public class NavigationActivityMain extends Activity implements
 		switch (position) {
 		case 0:
 			fragment = new TimelineFragment();
+			break;
+		case 1:
+			fragment = new ExperienciaFragment();
 			break;
 		default:
 			break;

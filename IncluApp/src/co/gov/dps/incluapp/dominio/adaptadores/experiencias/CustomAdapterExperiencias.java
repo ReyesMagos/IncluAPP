@@ -29,7 +29,7 @@ public class CustomAdapterExperiencias extends BaseAdapter {
 	@Override
 	public int getCount() {
 		// TODO Auto-generated method stub
-		return 0;
+		return listExpiriences.size();
 	}
 
 	@Override
@@ -62,11 +62,19 @@ public class CustomAdapterExperiencias extends BaseAdapter {
 					.findViewById(R.id.txt_title);
 			holder.imProfile = (ImageView) convertView
 					.findViewById(R.id.im_profile);
+			holder.txtDescription = (TextView) convertView
+					.findViewById(R.id.txt_description);
 			convertView.setTag(holder);
 		} else {
 			holder = (viewHolder) convertView.getTag();
 		}
-		Experiencia expirience= getItem(position);
+		Experiencia expirience = getItem(position);
+
+		holder.txtTitle.setText(expirience.getTitle());
+		holder.txtDescription.setText(expirience.getDescription());
+		holder.imProfile.setImageBitmap(expirience.getUser()
+				.getProfilePicture());
+
 		return convertView;
 	}
 

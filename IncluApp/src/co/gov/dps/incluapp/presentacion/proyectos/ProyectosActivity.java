@@ -1,5 +1,7 @@
 package co.gov.dps.incluapp.presentacion.proyectos;
 
+import com.opentok.android.demo.opentoksamples.UIActivity;
+
 import co.gov.dps.incluapp.R;
 import co.gov.dps.incluapp.R.id;
 import co.gov.dps.incluapp.R.layout;
@@ -24,7 +26,9 @@ public class ProyectosActivity extends Activity {
 	private TextView txtActSub;
 	private ImageView imProfile;
 	private TextView txtDescription;
-	private TextView txtGrupo;
+	private TextView txtRequiere;
+	private TextView txtinicio;
+	private TextView txtTags;
 
 	private ProyectosController controlador;
 
@@ -49,7 +53,9 @@ public class ProyectosActivity extends Activity {
 
 		txtActSub = (TextView) findViewById(R.id.proyecto_txt_ActSub);
 		txtDescription = (TextView) findViewById(R.id.proyecto_txt_description);
-		txtGrupo = (TextView) findViewById(R.id.proyectos_txt_grupometa);
+		txtRequiere = (TextView) findViewById(R.id.proyectos_textRequiere);
+		txtinicio = (TextView) findViewById(R.id.proyectos_textInicio);
+		txtTags = (TextView) findViewById(R.id.proyectos_txt_tag);
 
 		controlador.showProyecto();
 	}
@@ -57,7 +63,10 @@ public class ProyectosActivity extends Activity {
 	public void showProyecto(Proyecto proyecto) {
 		txtActSub.setText(proyecto.getActSubvencion());
 		txtDescription.setText(proyecto.getDescripcionResPropuesto());
-		txtGrupo.setText(proyecto.getGrupoMeta());
+		txtRequiere.setText(proyecto.getTema());
+		txtinicio.setText(proyecto.getIndResultadoSub());
+		txtTags.setText(proyecto.getGrupoMeta());
+		
 	}
 
 	@Override
@@ -66,7 +75,12 @@ public class ProyectosActivity extends Activity {
 		getMenuInflater().inflate(R.menu.proyectos, menu);
 		return true;
 	}
+	
+	public void call_Click(View view){
+		controlador.changeActivity(UIActivity.class);
+	}
 
+	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Handle action bar item clicks here. The action bar will

@@ -59,12 +59,12 @@ public class CustomAdapterProyectos extends BaseAdapter {
 					.findViewById(R.id.im_icon);
 			viewHolder.txtActaSub = (TextView) convertView
 					.findViewById(R.id.proyecto_txt_ActaS);
-			viewHolder.txtGrupoMeta = (TextView) convertView
-					.findViewById(R.id.proyecto_txt_grupoMeta);
+			viewHolder.txtTag = (TextView) convertView
+					.findViewById(R.id.proyecto_txt_tagssTV);
 			viewHolder.txtDescripcion = (TextView) convertView
 					.findViewById(R.id.proyectos_txt_descripcion);
-			viewHolder.txtTema = (TextView) convertView
-					.findViewById(R.id.proyectos_txt_Tema);
+			viewHolder.txtRequiere = (TextView) convertView
+					.findViewById(R.id.proyectos_textRequieree);
 
 			convertView.setTag(viewHolder);
 			
@@ -75,9 +75,10 @@ public class CustomAdapterProyectos extends BaseAdapter {
 		Proyecto proyecto = getItem(position);
 		
 		viewHolder.txtActaSub.setText(proyecto.getActSubvencion());
-		viewHolder.txtGrupoMeta.setText(proyecto.getGrupoMeta());
+		//viewHolder.txtTag.setText(proyecto.getGrupoMeta());
 		viewHolder.txtDescripcion.setText(proyecto.getDescripcionResPropuesto());
-		viewHolder.txtTema.setText(proyecto.getTema());
+		viewHolder.txtRequiere.setText(proyecto.getTema());
+		viewHolder.txtTag.setText(proyecto.getGrupoMeta());
 		
 		return convertView;
 		
@@ -86,9 +87,9 @@ public class CustomAdapterProyectos extends BaseAdapter {
 	private class ViewHolder {
 		ImageView imgIcon;
 		TextView txtActaSub;
-		TextView txtGrupoMeta;
 		TextView txtDescripcion;
-		TextView txtTema;
+		TextView txtRequiere;
+		TextView txtTag;
 	}
 
 }

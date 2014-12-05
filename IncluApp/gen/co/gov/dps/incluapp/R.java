@@ -1502,18 +1502,19 @@ containing a value of this type.
         public static final int list_selector=0x7f020083;
         public static final int messages=0x7f020084;
         public static final int mid_congestion=0x7f020085;
-        public static final int mute_pub=0x7f020086;
-        public static final int mute_sub=0x7f020087;
-        public static final int no_video=0x7f020088;
-        public static final int powered_by_google_dark=0x7f020089;
-        public static final int powered_by_google_light=0x7f02008a;
-        public static final int publisher=0x7f02008b;
-        public static final int silhouette2=0x7f02008c;
-        public static final int speaker_active=0x7f02008d;
-        public static final int strings=0x7f02008e;
-        public static final int task=0x7f02008f;
-        public static final int unmute_pub=0x7f020090;
-        public static final int unmute_sub=0x7f020091;
+        public static final int miguel=0x7f020086;
+        public static final int mute_pub=0x7f020087;
+        public static final int mute_sub=0x7f020088;
+        public static final int no_video=0x7f020089;
+        public static final int powered_by_google_dark=0x7f02008a;
+        public static final int powered_by_google_light=0x7f02008b;
+        public static final int publisher=0x7f02008c;
+        public static final int silhouette2=0x7f02008d;
+        public static final int speaker_active=0x7f02008e;
+        public static final int strings=0x7f02008f;
+        public static final int task=0x7f020090;
+        public static final int unmute_pub=0x7f020091;
+        public static final int unmute_sub=0x7f020092;
     }
     public static final class id {
         public static final int LinearLayout1=0x7f05004e;
@@ -1606,6 +1607,7 @@ containing a value of this type.
         public static final int lv_expiriences=0x7f050087;
         public static final int mainlayout=0x7f05009e;
         public static final int map=0x7f05006e;
+        public static final int maps=0x7f0500bd;
         public static final int match_parent=0x7f050024;
         public static final int menu_settings=0x7f0500b8;
         public static final int message=0x7f0500b6;

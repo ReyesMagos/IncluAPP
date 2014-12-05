@@ -7,9 +7,10 @@
         android:showAsAction="ifRoom"
         android:title="@string/action_example"/>
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/maps"
         android:orderInCategory="100"
-        android:showAsAction="never"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_launcher"
         android:title="@string/action_settings"/>
 
 

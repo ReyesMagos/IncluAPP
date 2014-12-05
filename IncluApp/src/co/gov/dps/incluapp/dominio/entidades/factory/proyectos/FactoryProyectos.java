@@ -47,6 +47,8 @@ public class FactoryProyectos implements IFactoryProyectos {
 		);
 
 		aProyecto.setComentario(listaComentarios);
+		
+		
 		listaComentarios = new ArrayList<ProyectosComentario>();
 		comentario = new ProyectosComentario("Sonia Ramirez-Contadora",
 				"05/02/2013", "Deben Mejorar Presupuesto");

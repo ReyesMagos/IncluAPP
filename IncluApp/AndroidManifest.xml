@@ -37,7 +37,7 @@
             android:value="AIzaSyC2klwt83-uKl-7SaLCcpFzb0GjumDH0Zg" />
 
         <activity
-            android:name="co.gov.dps.incluapp.presentacion.proyectos.ComentarioProyectosActivity"
+            android:name=".presentacion.proyectos.ComentarioProyectosActivity"
             android:label="@string/title_activity_comentario_proyectos" >
         </activity>
 
@@ -111,8 +111,12 @@
             android:label="@string/title_activity_event_info" >
         </activity>
         <activity
-            android:name="co.gov.dps.incluapp.presentacion.proyectos.ProyectosActivity"
+            android:name=".presentacion.proyectos.ProyectosActivity"
             android:label="@string/title_activity_proyectos" >
+        </activity>
+        <activity
+            android:name="co.gov.dps.incluapp.presentacion.proyectos.ProjectActivityCreate"
+            android:label="@string/title_activity_project_activity_create" >
         </activity>
     </application>
 

@@ -4,7 +4,6 @@ import android.annotation.SuppressLint;
 import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.LayoutInflater;
@@ -14,6 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import co.gov.dps.incluapp.R;
 import co.gov.dps.incluapp.dominio.adaptadores.evento.CustomAdapterEventos;
@@ -24,6 +24,7 @@ public class EventosListActivityFragment extends Fragment {
 
 	private View rootView;
 	private ListView listViewEvents;
+	private int pos;
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -45,6 +46,15 @@ public class EventosListActivityFragment extends Fragment {
 
 		listViewEvents.setAdapter(customAdapterEventos);
 		registerForContextMenu(listViewEvents);
+		listViewEvents.setOnItemClickListener(new OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
+				pos = position;
+			}
+			
+		});
 
 	}
 
@@ -66,7 +76,8 @@ public class EventosListActivityFragment extends Fragment {
 		super.onCreateContextMenu(menu, v, menuInfo);
 	}
 
-	@SuppressLint("NewApi") @Override
+	@SuppressLint("NewApi")
+	@Override
 	public boolean onContextItemSelected(MenuItem item) {
 
 		AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item
@@ -74,15 +85,24 @@ public class EventosListActivityFragment extends Fragment {
 		int menuItemIndex = item.getItemId();
 		switch (menuItemIndex) {
 		case 0:
-			startActivityForResult(new Intent(getActivity(), GenerateQRCodeActivity.class), 1);
+			startActivityForResult(new Intent(getActivity(),
+					GenerateQRCodeActivity.class), 1);
 			break;
 		case 1:
 			Intent i = new Intent(getActivity(), EventInfoActivity.class);
-			
-			i.putExtra("NombreEvento", FactoryEvent.getInstance().get(0).getEventName());
-			i.putExtra("LugarEvento", FactoryEvent.getInstance().get(0).getUbicacion().getCity());
-			i.putExtra("FechaEvento", FactoryEvent.getInstance().get(0).getFecha().toLocaleString());
-			i.putExtra("Descripcion", FactoryEvent.getInstance().get(0).getEventDescr());
+
+			i.putExtra("NombreEvento",
+					FactoryEvent.getInstance().get(pos)
+							.getEventName());
+			i.putExtra("LugarEvento",
+					FactoryEvent.getInstance().get(pos)
+							.getUbicacion().getCity());
+			i.putExtra("FechaEvento",
+					FactoryEvent.getInstance().get(pos).getFecha()
+							.toLocaleString());
+			i.putExtra("Descripcion",
+					FactoryEvent.getInstance().get(pos)
+							.getEventDescr());
 			startActivity(i);
 			break;
 		default:

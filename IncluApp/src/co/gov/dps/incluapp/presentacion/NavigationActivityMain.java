@@ -5,6 +5,8 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.view.Menu;
@@ -63,11 +65,9 @@ public class NavigationActivityMain extends Activity implements
 			fragment = new ProyectosFragment();
 			break;
 		case 3:
-			//
+			fragment = new EventosListActivityFragment();
 			break;
 		case 4:
-			fragment = new EventosListActivityFragment();
-
 			break;
 		default:
 			break;
@@ -105,8 +105,9 @@ public class NavigationActivityMain extends Activity implements
 		actionBar.setDisplayShowTitleEnabled(true);
 		actionBar.setTitle(mTitle);
 		// TODO: Para cambiar color del action
-		// actionBar.setBackgroundDrawable(new
-		// ColorDrawable(Color.parseColor("#3498db")));
+		actionBar.setBackgroundDrawable(new ColorDrawable(Color
+				.parseColor("#6699cc")));
+
 	}
 
 	@Override

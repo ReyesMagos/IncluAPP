@@ -4,6 +4,9 @@ import java.util.List;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.util.Base64;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -56,7 +59,7 @@ public class CustomAdapterProyectos extends BaseAdapter {
 			
 			viewHolder = new ViewHolder();
 			viewHolder.imgIcon = (ImageView) convertView
-					.findViewById(R.id.im_icon);
+					.findViewById(R.id.proyecto_icon);
 			viewHolder.txtActaSub = (TextView) convertView
 					.findViewById(R.id.proyecto_txt_ActaS);
 			viewHolder.txtTag = (TextView) convertView
@@ -79,9 +82,22 @@ public class CustomAdapterProyectos extends BaseAdapter {
 		viewHolder.txtDescripcion.setText(proyecto.getDescripcionResPropuesto());
 		viewHolder.txtRequiere.setText(proyecto.getTema());
 		viewHolder.txtTag.setText(proyecto.getGrupoMeta());
+		viewHolder.imgIcon.setImageBitmap(proyecto.getUm());
 		
 		return convertView;
 		
+	}
+	
+	public Bitmap StringToBitMap(String encodedString) {
+		try {
+			byte[] encodeByte = Base64.decode(encodedString, Base64.DEFAULT);
+			Bitmap bitmap = BitmapFactory.decodeByteArray(encodeByte, 0,
+					encodeByte.length);
+			return bitmap;
+		} catch (Exception e) {
+			e.getMessage();
+			return null;
+		}
 	}
 	
 	private class ViewHolder {

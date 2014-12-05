@@ -2,6 +2,8 @@ package co.gov.dps.incluapp.dominio.entidades.projectos;
 
 import java.util.List;
 
+import android.graphics.Bitmap;
+
 import co.gov.dps.incluapp.dominio.entidades.proyectos.comentarios.ProyectosComentario;
 
 public class Proyecto {
@@ -19,14 +21,14 @@ public class Proyecto {
 	private String tema;
 	private String programa;
 	private String tipoTema;
-	private String um;
+	private Bitmap um;
 	private List<ProyectosComentario> comentario;
 	
 	public Proyecto(String actSubvencion, int cantidad, int consecutivo,
 			String descripcionResPropuesto, String entidadEjecutora,
 			String grupoMeta, int idCatalogo, String indResultadoSub,
 			String astring, String productoEntregado, String tema,
-			String programa, String tipoTema, String um) {
+			String programa, String tipoTema, Bitmap um) {
 		super();
 		this.actSubvencion = actSubvencion;
 		this.cantidad = cantidad;
@@ -152,11 +154,11 @@ public class Proyecto {
 		this.tipoTema = tipoTema;
 	}
 
-	public String getUm() {
+	public Bitmap getUm() {
 		return um;
 	}
 
-	public void setUm(String um) {
+	public void setUm(Bitmap um) {
 		this.um = um;
 	}
 

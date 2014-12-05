@@ -12,9 +12,12 @@ import android.app.ActionBar;
 import android.app.Activity;
 import android.app.Notification.Action;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.util.Base64;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -50,7 +53,7 @@ public class ProyectosActivity extends Activity {
 
 	public void init() {
 		controlador = new ProyectosController(this);
-
+		imProfile = (ImageView) findViewById(R.id.proyecto_im_profile);
 		txtActSub = (TextView) findViewById(R.id.proyecto_txt_ActSub);
 		txtDescription = (TextView) findViewById(R.id.proyecto_txt_description);
 		txtRequiere = (TextView) findViewById(R.id.proyectos_textRequiere);
@@ -70,7 +73,20 @@ public class ProyectosActivity extends Activity {
 		txtRequiere.setText(proyecto.getTema());
 		txtinicio.setText(proyecto.getIndResultadoSub());
 		txtTags.setText(proyecto.getGrupoMeta());
+		imProfile.setImageBitmap(proyecto.getUm());
 		
+	}
+	
+	public Bitmap StringToBitMap(String encodedString) {
+		try {
+			byte[] encodeByte = Base64.decode(encodedString, Base64.DEFAULT);
+			Bitmap bitmap = BitmapFactory.decodeByteArray(encodeByte, 0,
+					encodeByte.length);
+			return bitmap;
+		} catch (Exception e) {
+			e.getMessage();
+			return null;
+		}
 	}
 
 	@Override

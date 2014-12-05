@@ -3,6 +3,10 @@ package co.gov.dps.incluapp.dominio.entidades.factory.proyectos;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.graphics.BitmapFactory;
+
+import co.gov.dps.incluapp.R;
+import co.gov.dps.incluapp.controladores.Comunicador;
 import co.gov.dps.incluapp.dominio.entidades.projectos.Proyecto;
 import co.gov.dps.incluapp.dominio.entidades.proyectos.comentarios.ProyectosComentario;
 
@@ -57,7 +61,9 @@ public class FactoryProyectos implements IFactoryProyectos {
 				"Sistematizacion_Pactos_Sociales.pdf", 
 				"Requiere: 80.000.000\nRecolectado: 5.000.000",
 				"Gobernabilidad y participación democrática", "Lideres",
-				"Lider comunitario participante"
+				BitmapFactory.decodeResource(Comunicador
+						.getCurrentVier().getContext().getResources(),
+						R.drawable.pro1)
 
 		);
 
@@ -82,7 +88,7 @@ public class FactoryProyectos implements IFactoryProyectos {
 				"04/05/2010", "Contraran mas Personal");
 		listaComentarios.add(comentario);
 		
-		comentario = new ProyectosComentario("María Torrez-Ama de casa",
+		comentario = new ProyectosComentario("Maiía Torrez-Ama de casa",
 				"16/15/2011", "Me encanta, más ideas como esta se hace un mejor país");
 		listaComentarios.add(comentario);
 		
@@ -103,7 +109,9 @@ public class FactoryProyectos implements IFactoryProyectos {
 				"Sistematizacion_Pactos_Sociales.pdf", 
 				"Requiere: 150.000.000\nRecolectado: 5.000.000",
 				"Gobernabilidad y participación democrática", "Lideres",
-				"Lider comunitario participante"
+				BitmapFactory.decodeResource(Comunicador
+						.getCurrentVier().getContext().getResources(),
+						R.drawable.pro2)
 
 		);
 		aProyecto2.setComentario(listaComentarios);
@@ -123,7 +131,7 @@ public class FactoryProyectos implements IFactoryProyectos {
 				"14/03/2011", "Excelente idea, todo mi apoyo");
 		listaComentarios.add(comentario);
 		
-		comentario = new ProyectosComentario("María Torrez-Ama de casa",
+		comentario = new ProyectosComentario("Maria Torrez-Ama de casa",
 				"16/15/2011", "Me encanta, más ideas como esta se hace un mejor país");
 		listaComentarios.add(comentario);
 		
@@ -135,12 +143,14 @@ public class FactoryProyectos implements IFactoryProyectos {
 				"05/12/2014", "Buen Proyecto visiten para recursos www.FNA.com");
 		listaComentarios.add(comentario);
 
-		Proyecto aProyecto3 = new Proyecto("Sisas dblica.", 3, 35,
+		Proyecto aProyecto3 = new Proyecto("Mercado agropecuario en pro de la sana competencia.", 3, 35,
 				"Los actoreturaen un pacto social municipal.", "1202U",
 				"Productores, Colectivos", 221, "Este proyecto inició el 20 de Octubre del 2014",
 				"30 en los pactos sociales", "Sociales.pdf", "Requiere: 150.000.000\nRecolectado: 5.000.000",
 				"Gobernabilidad y participación democrática", "Lideres",
-				"Lider comunitario participante"
+				BitmapFactory.decodeResource(Comunicador
+						.getCurrentVier().getContext().getResources(),
+						R.drawable.pro3)
 
 		);
 		aProyecto3.setComentario(listaComentarios);
@@ -176,17 +186,19 @@ public class FactoryProyectos implements IFactoryProyectos {
 				"MujerApp - Ayuda a La Mujer",
 				4,
 				36,
-				"APlicactivo móvil que permite con una llamada comunicarse con los entes que velan por los derechos de las mujes y que los protejen. Con esta aplicación las mujeres estarán seguras en cualquier lugar que se encuentren ya que solo con un par de click puede solicitar acompañamiento y protección por entidades del estado\n\nCon esta aplicaición decimos no al maltato fisico y psicologío hacia la mujer",
+				"APlicactivo movil que permite con una llamada comunicarse con los entes que velan por los derechos de las mujes y que los protejen. Con esta aplicacion las mujeres estaran seguras en cualquier lugar que se encuentren ya que solo con un par de click puede solicitar acompanamiento y proteccion por entidades del estado\n\nCon esta aplicaicion decimos no al maltato fisico y psicologico hacia la mujer",
 				"1202U",
-				"Mujeres; derechos, protección, ayuda, aplicación, seguridad",
+				"Mujeres; derechos, proteccion, ayuda, aplicacion, seguridad",
 				221,
-				"Este proyecto inició el 20 de Octubre del 2014",
+				"Este proyecto inicio el 20 de Octubre del 2014",
 				"30 Lideres comunitarios vinculados en los pactos sociales",
 				"Requiere: 80.000.000\nRecolectado: 5.000.000", 
 				"Requiere: 80.000.000\nRecolectado: 5.000.000",
-				"Gobernabilidad y participación democrática", 
+				"Gobernabilidad y participacion democrática", 
 				"Lideres",
-				"Lider comunitario participante"
+				BitmapFactory.decodeResource(Comunicador
+						.getCurrentVier().getContext().getResources(),
+						R.drawable.pro4)
 
 		);
 		
@@ -200,11 +212,11 @@ public class FactoryProyectos implements IFactoryProyectos {
 		listaComentarios.add(comentario);
 		
 		comentario = new ProyectosComentario("María Torrez-Ama de casa",
-				"16/15/2011", "Me encanta, más ideas como esta se hace un mejor país");
+				"16/15/2011", "Me encanta, mas ideas como esta se hace un mejor pais");
 		listaComentarios.add(comentario);
 		
 		comentario = new ProyectosComentario("Juan Cuervo-Ingeniero",
-				"14/03/2011", "Incluir a personas dela 3era edad mejorarría en un gran impacto");
+				"14/03/2011", "Incluir a personas dela 3era edad mejorarria en un gran impacto");
 		listaComentarios.add(comentario);
 		
 		comentario = new ProyectosComentario("David Mendoza-AdminEmpresas",
@@ -220,20 +232,22 @@ public class FactoryProyectos implements IFactoryProyectos {
 		listaComentarios.add(comentario);
 
 		Proyecto aProyecto5 = new Proyecto(
-				"Galería de flores",
+				"Galeria de flores",
 				2,
 				34,
-				"De acuerdo con Miguel Díez Trujillo, Presidente de Estelar “también buscamos hacer partícipe a la ciudad para que disfrute de todos los servicios que ofrece el hotel, contamos con ocho salones para organizar reuniones sociales; no es un lugar solo para las personas que viajan desde el interior del país, es un espacio de encuentro para todos los llaneros.”\n\n Sus 127 habitaciones fueron diseñadas teniendo en cuenta los últimos conceptos de comodidad para el descanso de sus huéspedes y una versátil área de trabajo que se complementa con servicio de WiFi, voz sobre IP, contestador automático programable y Centro de Negocios. \n\n Se complementa con espacios funcionales como lobby bar, restaurante, terraza lounge, gimnasio / spa, solárium, piscina, jacuzzi, sala de belleza y parqueadero privado.",
+				"De acuerdo con Miguel Diez Trujillo, Presidente de Estelar “también buscamos hacer partícipe a la ciudad para que disfrute de todos los servicios que ofrece el hotel, contamos con ocho salones para organizar reuniones sociales; no es un lugar solo para las personas que viajan desde el interior del pais, es un espacio de encuentro para todos los llaneros.”\n\n Sus 127 habitaciones fueron diseñadas teniendo en cuenta los ultimos conceptos de comodidad para el descanso de sus huespedes y una versatil area de trabajo que se complementa con servicio de WiFi, voz sobre IP, contestador automático programable y Centro de Negocios. \n\n Se complementa con espacios funcionales como lobby bar, restaurante, terraza lounge, gimnasio / spa, solarium, piscina, jacuzzi, sala de belleza y parqueadero privado.",
 				"1202U", 
 				"Arte, Cuadros, flores, recoleccion, paz;", 
 				221,
-				"Este proyecto inició el 20 de Octubre del 2014",
+				"Este proyecto inicio el 20 de Octubre del 2014",
 				"30 Lideres comunitarios vinculados en los pactos sociales",
 				"Sistematizacion_Pactos_Sociales.pdf", 
 				"Requiere: 80.000.000\nRecolectado: 5.000.000",
-				"Gobernabilidad y participación democrática", 
+				"Gobernabilidad y participación democratica", 
 				"Lideres",
-				"Lider comunitario participante"
+				BitmapFactory.decodeResource(Comunicador
+						.getCurrentVier().getContext().getResources(),
+						R.drawable.pro5)
 
 		);
 		

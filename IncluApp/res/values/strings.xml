@@ -36,5 +36,5 @@
     <string name="eventos_title_text">Eventos</string>
     <string name="crear_evento_text">Crear Evento</string>
     <string name="title_activity_coment_experiencia">ComentExperienciaActivity</string>
-
+    <string name="title_activity_proyectos">ProyectosActivity</string>
 </resources>

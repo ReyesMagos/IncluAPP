@@ -433,8 +433,8 @@ containing a value of this type.
     }
     public static final class id {
         public static final int LinearLayout1=0x7f070014;
-        public static final int action_example=0x7f07003a;
-        public static final int action_settings=0x7f070037;
+        public static final int action_example=0x7f070047;
+        public static final int action_settings=0x7f070044;
         public static final int book_now=0x7f070010;
         public static final int btn_coment=0x7f070022;
         public static final int btn_compartir=0x7f070024;
@@ -445,8 +445,8 @@ containing a value of this type.
         public static final int buy_with_google=0x7f07000e;
         public static final int classic=0x7f070011;
         public static final int container=0x7f07001d;
-        public static final int counter=0x7f07002f;
-        public static final int create_event=0x7f070038;
+        public static final int counter=0x7f070035;
+        public static final int create_event=0x7f070045;
         public static final int drawer_layout=0x7f070027;
         public static final int editText1=0x7f070018;
         public static final int editText2=0x7f07001a;
@@ -454,14 +454,15 @@ containing a value of this type.
         public static final int holo_dark=0x7f070005;
         public static final int holo_light=0x7f070006;
         public static final int hybrid=0x7f070004;
-        public static final int icon=0x7f07002d;
-        public static final int im_icon=0x7f070034;
+        public static final int icon=0x7f070033;
+        public static final int im_icon=0x7f07003a;
         public static final int im_profile=0x7f07001f;
         public static final int imageView1=0x7f07001c;
-        public static final int img_icon=0x7f070030;
-        public static final int listView_event=0x7f070033;
+        public static final int img_icon=0x7f070036;
+        public static final int listView_event=0x7f070039;
+        public static final int listView_proyectos=0x7f07003e;
         public static final int lvComents=0x7f070015;
-        public static final int lv_expiriences=0x7f070035;
+        public static final int lv_expiriences=0x7f07003b;
         public static final int map=0x7f070026;
         public static final int match_parent=0x7f07000c;
         public static final int monochrome=0x7f070013;
@@ -469,27 +470,39 @@ containing a value of this type.
         public static final int none=0x7f070000;
         public static final int normal=0x7f070001;
         public static final int production=0x7f070007;
-        public static final int rt_puntuacion=0x7f070029;
+        public static final int proyecto_icon=0x7f07003f;
+        public static final int proyecto_im_profile=0x7f07002a;
+        public static final int proyecto_textView=0x7f07002b;
+        public static final int proyecto_textView2=0x7f07002d;
+        public static final int proyecto_txt_ActSub=0x7f070029;
+        public static final int proyecto_txt_ActaS=0x7f070040;
+        public static final int proyecto_txt_description=0x7f07002c;
+        public static final int proyecto_txt_grupoMeta=0x7f070041;
+        public static final int proyectos_txt_Tema=0x7f070043;
+        public static final int proyectos_txt_descripcion=0x7f070042;
+        public static final int proyectos_txt_grupometa=0x7f07002e;
+        public static final int proyectos_txt_title=0x7f07003d;
+        public static final int rt_puntuacion=0x7f07002f;
         public static final int sandbox=0x7f070008;
         public static final int satellite=0x7f070002;
-        public static final int section_label=0x7f070036;
+        public static final int section_label=0x7f07003c;
         public static final int selectionDetails=0x7f07000b;
-        public static final int street_view=0x7f070039;
+        public static final int street_view=0x7f070046;
         public static final int strict_sandbox=0x7f070009;
         public static final int terrain=0x7f070003;
         public static final int textView1=0x7f070016;
         public static final int textView2=0x7f070017;
         public static final int textView3=0x7f070019;
         public static final int textView4=0x7f07001b;
-        public static final int title=0x7f07002e;
-        public static final int txt_coment=0x7f07002c;
-        public static final int txt_date=0x7f07002b;
+        public static final int title=0x7f070034;
+        public static final int txt_coment=0x7f070032;
+        public static final int txt_date=0x7f070031;
         public static final int txt_description=0x7f070020;
-        public static final int txt_fecha=0x7f070032;
-        public static final int txt_lugar=0x7f070031;
+        public static final int txt_fecha=0x7f070038;
+        public static final int txt_lugar=0x7f070037;
         public static final int txt_title=0x7f07001e;
         public static final int txt_ubication=0x7f070021;
-        public static final int txt_user_name=0x7f07002a;
+        public static final int txt_user_name=0x7f070030;
         public static final int wrap_content=0x7f07000d;
     }
     public static final class integer {
@@ -501,17 +514,20 @@ containing a value of this type.
         public static final int activity_experiencias=0x7f030002;
         public static final int activity_maps=0x7f030003;
         public static final int activity_navigation_main=0x7f030004;
-        public static final int activity_timeline=0x7f030005;
-        public static final int custom_adapter_coments_experiencias=0x7f030006;
-        public static final int drawer_list_item=0x7f030007;
-        public static final int event_listview_personalized=0x7f030008;
-        public static final int eventos_activity_main=0x7f030009;
-        public static final int experiencias_custom_list_layout=0x7f03000a;
-        public static final int fragment_experiencias=0x7f03000b;
-        public static final int fragment_navigation_activity_main=0x7f03000c;
-        public static final int fragment_navigation_drawer=0x7f03000d;
-        public static final int info_windows_layou=0x7f03000e;
-        public static final int timeline_listview_personalized=0x7f03000f;
+        public static final int activity_proyectos=0x7f030005;
+        public static final int activity_timeline=0x7f030006;
+        public static final int custom_adapter_coments_experiencias=0x7f030007;
+        public static final int drawer_list_item=0x7f030008;
+        public static final int event_listview_personalized=0x7f030009;
+        public static final int eventos_activity_main=0x7f03000a;
+        public static final int experiencias_custom_list_layout=0x7f03000b;
+        public static final int fragment_experiencias=0x7f03000c;
+        public static final int fragment_navigation_activity_main=0x7f03000d;
+        public static final int fragment_navigation_drawer=0x7f03000e;
+        public static final int fragment_proyectos=0x7f03000f;
+        public static final int info_windows_layou=0x7f030010;
+        public static final int proyectos_custom_list_layout=0x7f030011;
+        public static final int timeline_listview_personalized=0x7f030012;
     }
     public static final class menu {
         public static final int coment_experiencia=0x7f0b0000;
@@ -521,7 +537,8 @@ containing a value of this type.
         public static final int global=0x7f0b0004;
         public static final int maps=0x7f0b0005;
         public static final int navigation_activity_main=0x7f0b0006;
-        public static final int timeline=0x7f0b0007;
+        public static final int proyectos=0x7f0b0007;
+        public static final int timeline=0x7f0b0008;
     }
     public static final class string {
         public static final int action_example=0x7f060024;
@@ -627,6 +644,7 @@ containing a value of this type.
         public static final int title_activity_experiencias=0x7f060026;
         public static final int title_activity_maps=0x7f060027;
         public static final int title_activity_navigation_activity_main=0x7f06001d;
+        public static final int title_activity_proyectos=0x7f06002c;
         public static final int title_section1=0x7f06001e;
         public static final int title_section2=0x7f06001f;
         public static final int title_section3=0x7f060020;

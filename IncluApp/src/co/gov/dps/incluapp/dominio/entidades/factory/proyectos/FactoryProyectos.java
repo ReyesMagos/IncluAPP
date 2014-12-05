@@ -8,11 +8,16 @@ import co.gov.dps.incluapp.dominio.entidades.projectos.Proyecto;
 public class FactoryProyectos implements IFactoryProyectos {
 	
 	private static FactoryProyectos aProyectosSingleton;
-
 	private List<Proyecto> proyectos;
+	private Proyecto proyectoToShow;
 	
 	public FactoryProyectos(){
-		
+				
+	}
+	
+	
+	@Override
+	public List<Proyecto> getProyectos() {
 		this.proyectos = new ArrayList<Proyecto>();
 		
 		Proyecto aProyecto  = new Proyecto(
@@ -111,13 +116,19 @@ public class FactoryProyectos implements IFactoryProyectos {
 		this.proyectos.add(aProyecto4);
 		this.proyectos.add(aProyecto5);
 		
-		
+		return proyectos;
 	}
 	
 	
-	@Override
-	public List<Proyecto> getProyectos() {
-		return proyectos;
+
+
+	public Proyecto getProyectoToShow() {
+		return proyectoToShow;
+	}
+
+
+	public void setProyectoToShow(Proyecto proyectoToShow) {
+		this.proyectoToShow = proyectoToShow;
 	}
 
 

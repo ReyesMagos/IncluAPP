@@ -6,11 +6,11 @@
 
     <ImageView
         android:id="@+id/icon"
-        android:layout_width="25dp"
+        android:layout_width="35dp"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="12dp"
-        android:layout_marginRight="12dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:contentDescription="@string/desc_list_item_icon"
         android:src="@drawable/ic_launcher"
         android:layout_centerVertical="true" />
@@ -24,7 +24,7 @@
         android:textAppearance="?android:attr/textAppearanceListItemSmall"
         android:textColor="@color/list_item_title"
         android:gravity="center_vertical"
-        android:paddingRight="40dp"
+        android:paddingRight="60dp"
         android:paddingLeft="0dp"/>
 
     <TextView android:id="@+id/counter"
@@ -33,7 +33,7 @@
         android:background="@drawable/counter_bg"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:layout_marginRight="8dp"
+        android:layout_marginRight="16dp"
         android:textColor="@color/counter_text_color"/>
 
 </RelativeLayout>

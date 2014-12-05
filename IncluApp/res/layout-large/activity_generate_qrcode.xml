@@ -11,13 +11,7 @@
         android:src="@drawable/abc_ab_stacked_transparent_dark_holo"
         android:layout_gravity="center" />
     
-     <ImageView
-        android:id="@+id/imageViewQ1R"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="save"
-        android:src="@drawable/ic_launcher" 
-        android:layout_gravity="center"/>
+
     
     
 

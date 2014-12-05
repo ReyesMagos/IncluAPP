@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.graphics.BitmapFactory;
-
 import co.gov.dps.incluapp.R;
 import co.gov.dps.incluapp.dominio.entidades.Ubicacion;
 import co.gov.dps.incluapp.dominio.entidades.User;

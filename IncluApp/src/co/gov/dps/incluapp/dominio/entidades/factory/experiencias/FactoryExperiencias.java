@@ -33,9 +33,10 @@ public class FactoryExperiencias implements IFactoryExperiencias {
 			user.setLastName("Valencia Cardona");
 			user.setAge("46");
 			user.setProfession("Cocinera");
-			user.setProfilePicture(BitmapFactory.decodeResource(
-					ExperienciaFragment.getCurrentView().getContext()
-							.getResources(), R.drawable.amparo));
+//			user.setProfilePicture(BitmapFactory.decodeResource(
+//					ExperienciaFragment.getCurrentView().getContext()
+//							.getResources(), R.drawable.amparo));
+			user.setProfilePicture(null);
 			Ubicacion ubication = new Ubicacion();
 			ubication.setState("Antioquia");
 			ubication.setCity("Envigado");

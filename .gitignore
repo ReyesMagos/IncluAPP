@@ -29,3 +29,6 @@ IncluApp/bin/classes/co/gov/dps/incluapp/presentacion/expericiencias/Experiencia
 IncluApp/bin/classes/co/gov/dps/incluapp/dominio/adaptadores/experiencias/CustomAdapterExperiencias.class
 IncluApp/bin/classes/co/gov/dps/incluapp/dominio/adaptadores/experiencias/CustomAdapterExperiencias.class
 >>>>>>> origin/alexis
+IncluApp/bin/classes/co/gov/dps/incluapp/dominio/entidades/experiencias/fragments/ExperienciaFragment.class
+IncluApp/bin/classes/co/gov/dps/incluapp/dominio/entidades/experiencias/fragments/ExperienciaFragment.class
+*.class

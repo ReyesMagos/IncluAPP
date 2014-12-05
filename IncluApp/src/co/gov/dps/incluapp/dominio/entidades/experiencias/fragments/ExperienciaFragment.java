@@ -2,22 +2,20 @@ package co.gov.dps.incluapp.dominio.entidades.experiencias.fragments;
 
 import java.util.List;
 
-import co.gov.dps.incluapp.R;
-import co.gov.dps.incluapp.dominio.adaptadores.experiencias.CustomAdapterExperiencias;
-import co.gov.dps.incluapp.dominio.entidades.experiencias.Experiencia;
-import co.gov.dps.incluapp.dominio.entidades.factory.experiencias.FactoryExperiencias;
-import co.gov.dps.incluapp.presentacion.expericiencias.ExperienciasActivity;
 import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnLongClickListener;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.ListView;
+import co.gov.dps.incluapp.R;
+import co.gov.dps.incluapp.dominio.adaptadores.experiencias.CustomAdapterExperiencias;
+import co.gov.dps.incluapp.dominio.entidades.experiencias.Experiencia;
+import co.gov.dps.incluapp.dominio.entidades.factory.experiencias.FactoryExperiencias;
+import co.gov.dps.incluapp.presentacion.expericiencias.ExperienciasActivity;
 
 public class ExperienciaFragment extends Fragment {
 

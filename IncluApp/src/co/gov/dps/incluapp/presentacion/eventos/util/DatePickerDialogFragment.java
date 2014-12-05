@@ -2,14 +2,13 @@ package co.gov.dps.incluapp.presentacion.eventos.util;
 
 import java.util.Calendar;
 
-import co.gov.dps.incluapp.presentacion.eventos.CreateEventActivity;
-
 import android.app.DatePickerDialog;
 import android.app.DatePickerDialog.OnDateSetListener;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.os.Bundle;
 import android.widget.DatePicker;
+import co.gov.dps.incluapp.presentacion.eventos.CreateEventActivity;
 
 public class DatePickerDialogFragment extends DialogFragment implements
 		OnDateSetListener {

@@ -32,10 +32,16 @@
     <string name="desc_list_item_icon">Item Icon</string>
     <string name="title_activity_experiencias">Experiencias</string>
     <string name="title_activity_maps">MapsActivity</string>
-
     <string name="title_activity_create_event">CreateEventActivity</string>
     <string name="eventos_title_text">Eventos</string>
     <string name="crear_evento_text">Crear Evento</string>
 
+    <!-- Context menu -->
+    <array name="context_items">
+        <item>Asistir a evento</item>
+        <item>Ver Información</item>
+    </array>
+
+    <string name="title_activity_event_info">EventInfoActivity</string>
 
 </resources>

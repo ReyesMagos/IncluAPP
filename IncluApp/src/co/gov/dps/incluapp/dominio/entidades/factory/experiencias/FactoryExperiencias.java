@@ -5,6 +5,7 @@ import java.util.List;
 
 import android.graphics.BitmapFactory;
 import co.gov.dps.incluapp.R;
+import co.gov.dps.incluapp.controladores.Comunicador;
 import co.gov.dps.incluapp.dominio.entidades.Ubicacion;
 import co.gov.dps.incluapp.dominio.entidades.User;
 import co.gov.dps.incluapp.dominio.entidades.experiencias.ComentExperiencia;
@@ -24,7 +25,7 @@ public class FactoryExperiencias implements IFactoryExperiencias {
 	@Override
 	public List<Experiencia> getListExperiencias() {
 		// TODO Auto-generated method stub
-		if (this.listExpiriences == null) {
+		
 			List<ComentExperiencia> listaComentarios = new ArrayList<ComentExperiencia>();
 			Experiencia expirience = new Experiencia();
 			listExpiriences = new ArrayList<Experiencia>();
@@ -33,9 +34,14 @@ public class FactoryExperiencias implements IFactoryExperiencias {
 			user.setLastName("Valencia Cardona");
 			user.setAge("46");
 			user.setProfession("Cocinera");
-			user.setProfilePicture(BitmapFactory.decodeResource(
-					ExperienciaFragment.getCurrentView().getContext()
-							.getResources(), R.drawable.amparo));
+			if (ExperienciaFragment.getCurrentView() != null)
+				user.setProfilePicture(BitmapFactory.decodeResource(
+						ExperienciaFragment.getCurrentView().getContext()
+								.getResources(), R.drawable.amparo));
+			else if (ExperienciaFragment.getCurrentView() != null)
+				user.setProfilePicture(BitmapFactory.decodeResource(Comunicador
+						.getCurrentVier().getContext().getResources(),
+						R.drawable.amparo));
 			Ubicacion ubication = new Ubicacion();
 			ubication.setState("Antioquia");
 			ubication.setCity("Envigado");
@@ -69,7 +75,7 @@ public class FactoryExperiencias implements IFactoryExperiencias {
 			expirience.setEstado(true);
 
 			listExpiriences.add(expirience);
-		}
+		
 		return listExpiriences;
 	}
 

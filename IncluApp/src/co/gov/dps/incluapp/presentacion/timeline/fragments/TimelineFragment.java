@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 import co.gov.dps.incluapp.R;
+import co.gov.dps.incluapp.controladores.Comunicador;
 import co.gov.dps.incluapp.dominio.adaptadores.timeline.CustomAdapterTimeLine;
 import co.gov.dps.incluapp.dominio.entidades.experiencias.Experiencia;
 import co.gov.dps.incluapp.dominio.entidades.factory.experiencias.FactoryExperiencias;
@@ -29,8 +30,10 @@ public class TimelineFragment extends Fragment {
 			Bundle savedInstanceState) {
 		rootView = inflater.inflate(R.layout.activity_timeline, container,
 				false);
+		Comunicador.setCurrentVier(rootView);
 		setHasOptionsMenu(true);
 		initComponents();
+
 		return rootView;
 	}
 
@@ -57,7 +60,7 @@ public class TimelineFragment extends Fragment {
 		Random randn = new Random();
 
 		for (int i = 0; i < objectList.size(); i++) {
-			int r = (int)(Math.random() * objectList.size() + 0);
+			int r = (int) (Math.random() * objectList.size() + 0);
 			list2.add(objectList.get(r));
 		}
 

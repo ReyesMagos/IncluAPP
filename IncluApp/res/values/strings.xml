@@ -16,6 +16,7 @@
     <!-- Navigation Strings -->
     <!-- Navigation Drawer -->
     <array name="nav_drawer_titles">
+        <item>Inicio</item>
         <item>Experiencias</item>
         <item>Proyectos</item>
         <item>Mapas</item>
@@ -31,5 +32,10 @@
     <string name="desc_list_item_icon">Item Icon</string>
     <string name="title_activity_experiencias">Experiencias</string>
     <string name="title_activity_maps">MapsActivity</string>
+
+    <string name="title_activity_create_event">CreateEventActivity</string>
+    <string name="eventos_title_text">Eventos</string>
+    <string name="crear_evento_text">Crear Evento</string>
+
 
 </resources>

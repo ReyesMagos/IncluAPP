@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import co.gov.dps.incluapp.R;
 import co.gov.dps.incluapp.dominio.entidades.experiencias.fragments.ExperienciaFragment;
+import co.gov.dps.incluapp.presentacion.eventos.EventosListActivityFragment;
 import co.gov.dps.incluapp.presentacion.timeline.fragments.TimelineFragment;
 
 public class NavigationActivityMain extends Activity implements
@@ -55,6 +56,16 @@ public class NavigationActivityMain extends Activity implements
 			break;
 		case 1:
 			fragment = new ExperienciaFragment();
+
+			break;
+		case 2:
+			break;
+		case 3:
+			
+			break;
+		case 4:
+			fragment = new EventosListActivityFragment();
+
 			break;
 		default:
 			break;
@@ -85,7 +96,9 @@ public class NavigationActivityMain extends Activity implements
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
 		actionBar.setDisplayShowTitleEnabled(true);
 		actionBar.setTitle(mTitle);
-		//TODO: Para cambiar color del action actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3498db")));
+		// TODO: Para cambiar color del action
+		// actionBar.setBackgroundDrawable(new
+		// ColorDrawable(Color.parseColor("#3498db")));
 	}
 
 	@Override
@@ -137,14 +150,15 @@ public class NavigationActivityMain extends Activity implements
 		public PlaceholderFragment() {
 		}
 
-//		@Override
-//		public View onCreateView(LayoutInflater inflater, ViewGroup container,
-//				Bundle savedInstanceState) {
-//			View rootView = inflater.inflate(
-//					R.layout.fragment_navigation_activity_main, container,
-//					false);
-//			return rootView;
-//		}
+		// @Override
+		// public View onCreateView(LayoutInflater inflater, ViewGroup
+		// container,
+		// Bundle savedInstanceState) {
+		// View rootView = inflater.inflate(
+		// R.layout.fragment_navigation_activity_main, container,
+		// false);
+		// return rootView;
+		// }
 
 		@Override
 		public void onAttach(Activity activity) {

@@ -1,15 +1,5 @@
 package co.gov.dps.incluapp.presentacion.expericiencias;
 
-import co.gov.dps.incluapp.R;
-import co.gov.dps.incluapp.R.id;
-import co.gov.dps.incluapp.R.layout;
-import co.gov.dps.incluapp.R.menu;
-import co.gov.dps.incluapp.controladores.Comunicador;
-import co.gov.dps.incluapp.dominio.entidades.experiencias.Experiencia;
-import co.gov.dps.incluapp.dominio.entidades.factory.experiencias.FactoryExperiencias;
-
-import com.google.android.gms.maps.GoogleMap;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
@@ -18,6 +8,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import co.gov.dps.incluapp.R;
+import co.gov.dps.incluapp.controladores.Comunicador;
+import co.gov.dps.incluapp.dominio.entidades.experiencias.Experiencia;
+import co.gov.dps.incluapp.dominio.entidades.factory.experiencias.FactoryExperiencias;
 
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;

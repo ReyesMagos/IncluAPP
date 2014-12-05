@@ -915,12 +915,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #428bca;
+  color: #fff;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #2a6496;
+  color: #fff;
   text-decoration: underline;
 }
 a:focus {
@@ -1111,6 +1111,13 @@ p {
   font-weight: 300;
   line-height: 1.4;
 }
+.leadwhite {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.4;
+  color: #E8E8E8 ;
+}
 @media (min-width: 768px) {
   .lead {
     font-size: 21px;
@@ -1229,6 +1236,9 @@ ul ol,
 ol ol {
   margin-bottom: 0;
 }
+.vinieta{
+list-style-image: url("/images/li.png");
+ }
 .list-unstyled {
   padding-left: 0;
   list-style: none;
@@ -2925,8 +2935,8 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-success {
   color: #fff;
-  background-color: #5cb85c;
-  border-color: #4cae4c;
+  background-color: #222;
+  border-color: #222;
 }
 .btn-success:hover,
 .btn-success:focus,
@@ -2935,7 +2945,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-success.active,
 .open > .dropdown-toggle.btn-success {
   color: #fff;
-  background-color: #449d44;
+  background-color: #f78586;
   border-color: #398439;
 }
 .btn-success:active,
@@ -2961,7 +2971,7 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-  background-color: #5cb85c;
+  background-color: #f78586;
   border-color: #4cae4c;
 }
 .btn-success .badge {

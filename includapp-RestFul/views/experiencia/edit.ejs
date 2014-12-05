@@ -1,6 +1,10 @@
 <div class="container">
+
+
 	<div class="row clearfix">
+	<center><h1>Editar Experiencia</h1></center>
 		<div class="col-md-6 col-md-offset-3">
+		<div class="jumbotron">
 			<form role="form" action="/experiencia/update/<%=experience.id%>" method="POST">
 				<div class="form-group">
 					<div class="row">
@@ -28,7 +32,7 @@
 							<label for="depto">Departamento</label>
 						</div>
 						<div class="col-xs-8">
-							<input type="email" value="<%=experience.depto%> " class="form-control" id="depto" name="depto" required/>
+							<input type="text" value="<%=experience.depto%> " class="form-control" id="depto" name="depto" required/>
 						</div>
 					</div>
 				</div>
@@ -63,9 +67,10 @@
 					</div>
 				</div>
 					<div class="form-group">
-				<button type="submit" class="btn btn-success btn-lg  pull-right" >Guardar</button>
+				<button type="submit" class="btn btn-success btn-lg  pull-right" >Guardar</button><br>
 				</div>
 			</form>
 		</div>
+	</div>
 	</div>
 </div>

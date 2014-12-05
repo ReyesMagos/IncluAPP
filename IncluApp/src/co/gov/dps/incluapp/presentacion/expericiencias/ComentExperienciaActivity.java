@@ -6,16 +6,22 @@ import co.gov.dps.incluapp.R.layout;
 import co.gov.dps.incluapp.R.menu;
 import co.gov.dps.incluapp.dominio.adaptadores.experiencias.CustomAdapterExperiencias;
 import co.gov.dps.incluapp.dominio.adaptadores.experiencias.CustomAdapterExperienciasComents;
+import co.gov.dps.incluapp.dominio.entidades.experiencias.ComentExperiencia;
 import co.gov.dps.incluapp.dominio.entidades.factory.experiencias.FactoryExperiencias;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.RatingBar;
 
 public class ComentExperienciaActivity extends Activity {
 
 	private ListView lvComents;
+	private EditText txtComent;
+	private RatingBar rtComent;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -24,12 +30,32 @@ public class ComentExperienciaActivity extends Activity {
 		init();
 	}
 
+	public void btnAddComent_Click(View view) {
+		ComentExperiencia coment = new ComentExperiencia();
+		coment.setDate("05/12/2014");
+		coment.setUserName("oscar");
+		coment.setComent(txtComent.getText().toString());
+		coment.setPuntuation((int)rtComent.getRating());
+		FactoryExperiencias.getInstance().getExperienceToShow().getComents()
+				.add(coment);
+		showComents();
+	
+	}
+
 	public void init() {
+		rtComent= (RatingBar) findViewById(R.id.rt_coment);
+		txtComent = (EditText) findViewById(R.id.txt_coment);
 		lvComents = (ListView) findViewById(R.id.lvComents);
+		showComents();
+
+	}
+
+	public void showComents() {
 		CustomAdapterExperienciasComents customAdapterExperienciasComents = new CustomAdapterExperienciasComents(
 				getApplicationContext(), FactoryExperiencias.getInstance()
 						.getExperienceToShow().getComents());
 		lvComents.setAdapter(customAdapterExperienciasComents);
+		
 	}
 
 	@Override

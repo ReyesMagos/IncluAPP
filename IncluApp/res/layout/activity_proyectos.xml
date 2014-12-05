@@ -67,15 +67,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="showComments"
             android:src="@drawable/ic_launcher" />
 
-        <ImageView
-            android:id="@+id/btn_mapa"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="btnMap_Click"
-            android:src="@drawable/ic_launcher" />
 
         <ImageView
             android:id="@+id/btn_compartir"

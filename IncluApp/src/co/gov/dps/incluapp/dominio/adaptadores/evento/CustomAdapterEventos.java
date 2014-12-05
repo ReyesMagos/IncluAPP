@@ -2,9 +2,6 @@ package co.gov.dps.incluapp.dominio.adaptadores.evento;
 
 import java.util.List;
 
-import co.gov.dps.incluapp.R;
-import co.gov.dps.incluapp.dominio.entidades.eventos.Evento;
-
 import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -13,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import co.gov.dps.incluapp.R;
+import co.gov.dps.incluapp.dominio.entidades.eventos.Evento;
 
 public class CustomAdapterEventos extends BaseAdapter {
 

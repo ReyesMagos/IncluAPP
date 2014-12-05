@@ -56,4 +56,16 @@
     <string name="title_activity_coment_experiencia">ComentExperienciaActivity</string>
     <string name="title_activity_proyectos">ProyectosActivity</string>
 
+
+    <!-- Context menu -->
+    <array name="context_items">
+        <item>Asistir a evento</item>
+        <item>Ver Información</item>
+    </array>
+
+    <string name="title_activity_event_info">EventInfoActivity</string>
+    <string name="title_activity_comentario_proyectos">ComentarioProyectosActivity</string>
+
+
 </resources>
+

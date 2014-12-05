@@ -6,20 +6,20 @@ import co.gov.dps.incluapp.dominio.entidades.User;
 
 public class ProyectosComentario {
 	
-	private User aUser;
+	private String aUser;
 	private String aDate;
 	private String aComment;
 	private int aScore;
 	
-	public ProyectosComentario(User aUser, String aDate, String aComment){
+	public ProyectosComentario(String aUser, String aDate, String aComment){
 		super();
 		this.aUser = aUser;
 		this.aDate = aDate;
 		this.aComment = aComment;
-		this.aScore = -1;
+		this.aScore = 1;
 	}
 	
-	public ProyectosComentario(User aUser, String aDate, String aComment,
+	public ProyectosComentario(String aUser, String aDate, String aComment,
 			int aScore) {
 		super();
 		this.aUser = aUser;
@@ -28,11 +28,11 @@ public class ProyectosComentario {
 		this.aScore = aScore;
 	}
 
-	public User getaUser() {
+	public String getaUser() {
 		return aUser;
 	}
 
-	public void setaUser(User aUser) {
+	public void setaUser(String aUser) {
 		this.aUser = aUser;
 	}
 

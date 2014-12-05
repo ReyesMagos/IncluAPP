@@ -74,6 +74,7 @@ public class CustomAdapterExperienciasComents extends BaseAdapter {
 		ComentExperiencia coment = getItem(position);
 
 		holder.rtPuntuacion.setRating(coment.getPuntuation());
+		holder.rtPuntuacion.setEnabled(false);
 		holder.txtComent.setText(coment.getComent());
 		holder.txtDate.setText(coment.getDate());
 		holder.txtUser.setText(coment.getUserName());

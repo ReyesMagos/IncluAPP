@@ -42,18 +42,21 @@ public class FactoryExperiencias implements IFactoryExperiencias {
 		ubication.setAddress("mi casa");
 		ubication.setLat(6.170060);
 		ubication.setLon(-75.581733);
+		
 		ComentExperiencia coment = new ComentExperiencia();
 		coment.setDate("12/05/2013");
 		coment.setComent("Lorem Ipsum Dolor");
 		coment.setUserName("Ana Bolivar");
 		coment.setPuntuation(3);
 		listaComentarios.add(coment);
+		
 		coment= new ComentExperiencia();
 		coment.setDate("28/08/2014");
 		coment.setComent("Una Chimba");
 		coment.setPuntuation(4);
 		coment.setUserName("Ana Zapata");
 		listaComentarios.add(coment);
+		
 		expirience.setComents(listaComentarios);
 		expirience.setUser(user);
 		expirience.setUbication(ubication);

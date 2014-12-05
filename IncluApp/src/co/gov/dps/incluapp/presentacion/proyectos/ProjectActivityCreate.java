@@ -51,7 +51,8 @@ public class ProjectActivityCreate extends Activity {
 		actionBar.setBackgroundDrawable(new ColorDrawable(Color
 				.parseColor("#6699cc")));
 
-		String[] categorias = { "Arte", "Cultura", "Educación", "Otro" };
+		String[] categorias = { "Participacion", "Derechos Humanos",
+				"Desarrollo Productivo", "Fortalecimiento institucional" };
 		SpinnerAdapter adapterCategorias = new ArrayAdapter<String>(this,
 				android.R.layout.simple_list_item_1, categorias);
 		spinnerCategoria.setAdapter(adapterCategorias);
@@ -64,7 +65,7 @@ public class ProjectActivityCreate extends Activity {
 		this.palabrasClaves = editKeyWords.getText().toString();
 
 		Toast.makeText(this.getApplicationContext(),
-				"Su proyecto ha sido guardado con éxito", Toast.LENGTH_LONG)
+				"Su proyecto ha sido guardado con Exito", Toast.LENGTH_LONG)
 				.show();
 		finish();
 	}

@@ -1531,18 +1531,24 @@ containing a value of this type.
         public static final int no_video=0x7f0200a0;
         public static final int powered_by_google_dark=0x7f0200a1;
         public static final int powered_by_google_light=0x7f0200a2;
-        public static final int project_icon=0x7f0200a3;
-        public static final int project_icon1=0x7f0200a4;
-        public static final int publisher=0x7f0200a5;
-        public static final int share_btn=0x7f0200a6;
-        public static final int share_btn_pressed=0x7f0200a7;
-        public static final int silhouette2=0x7f0200a8;
-        public static final int speaker_active=0x7f0200a9;
-        public static final int stree_view_action=0x7f0200aa;
-        public static final int strings=0x7f0200ab;
-        public static final int task=0x7f0200ac;
-        public static final int unmute_pub=0x7f0200ad;
-        public static final int unmute_sub=0x7f0200ae;
+        public static final int pro1=0x7f0200a3;
+        public static final int pro2=0x7f0200a4;
+        public static final int pro3=0x7f0200a5;
+        public static final int pro4=0x7f0200a6;
+        public static final int pro5=0x7f0200a7;
+        public static final int project_icon=0x7f0200a8;
+        public static final int project_icon1=0x7f0200a9;
+        public static final int proyectnew_btn=0x7f0200aa;
+        public static final int publisher=0x7f0200ab;
+        public static final int share_btn=0x7f0200ac;
+        public static final int share_btn_pressed=0x7f0200ad;
+        public static final int silhouette2=0x7f0200ae;
+        public static final int speaker_active=0x7f0200af;
+        public static final int stree_view_action=0x7f0200b0;
+        public static final int strings=0x7f0200b1;
+        public static final int task=0x7f0200b2;
+        public static final int unmute_pub=0x7f0200b3;
+        public static final int unmute_sub=0x7f0200b4;
     }
     public static final class id {
         public static final int LinearLayout1=0x7f08004e;

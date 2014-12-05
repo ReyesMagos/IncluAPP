@@ -151,8 +151,8 @@ public class FactoryExperiencias implements IFactoryExperiencias {
 		ubication.setState("Santander");
 		ubication.setCity("Bucaramanga");
 		ubication.setAddress("Neo Mundos");
-		ubication.setLat(103016);
-		ubication.setLon(-73.119141);
+		ubication.setLat(7.182219);
+		ubication.setLon(-73.130814);
 
 		coment = new ComentExperiencia();
 		coment.setDate("12/14/2011");

@@ -10,6 +10,6 @@
         android:id="@+id/maps"
         android:orderInCategory="100"
         android:showAsAction="always"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/map_action"
         android:title="@string/action_settings"/>
 </menu>

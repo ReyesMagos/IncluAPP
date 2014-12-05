@@ -68,7 +68,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="showComents_Click"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/comentar_btn" />
 
         <ImageView
             android:id="@+id/btn_mapa"
@@ -76,21 +76,21 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="btnMap_Click"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/map_btn" />
 
         <ImageView
             android:id="@+id/btn_compartir"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/share_btn" />
 
         <ImageView
             android:id="@+id/btn_mensaje"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/mensaje_btn" />
     </LinearLayout>
 
 </LinearLayout>

@@ -3,9 +3,10 @@
     tools:context="co.gov.dps.incluapp.MapsActivity" >
 
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/street_view"
         android:orderInCategory="100"
-        android:showAsAction="never"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_launcher"
         android:title="@string/action_settings"/>
 
 </menu>

@@ -433,7 +433,7 @@ containing a value of this type.
     }
     public static final class id {
         public static final int LinearLayout1=0x7f070026;
-        public static final int action_example=0x7f07002a;
+        public static final int action_example=0x7f07002b;
         public static final int action_settings=0x7f070029;
         public static final int book_now=0x7f070010;
         public static final int btn_coment=0x7f07001b;
@@ -466,6 +466,7 @@ containing a value of this type.
         public static final int satellite=0x7f070002;
         public static final int section_label=0x7f070028;
         public static final int selectionDetails=0x7f07000b;
+        public static final int street_view=0x7f07002a;
         public static final int strict_sandbox=0x7f070009;
         public static final int terrain=0x7f070003;
         public static final int textView1=0x7f070017;
@@ -489,6 +490,7 @@ containing a value of this type.
         public static final int fragment_experiencias=0x7f030006;
         public static final int fragment_navigation_activity_main=0x7f030007;
         public static final int fragment_navigation_drawer=0x7f030008;
+        public static final int info_windows_layou=0x7f030009;
     }
     public static final class menu {
         public static final int experiencias=0x7f0b0000;

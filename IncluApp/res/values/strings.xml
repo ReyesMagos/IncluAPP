@@ -4,6 +4,8 @@
     <string name="app_name">IncluApp</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    
+    <string name="menu_settings">Settings</string>
     <string name="title_activity_navigation_activity_main">NavigationActivityMain</string>
     <string name="title_section1">Experiencias</string>
     <string name="title_section2">Proyectos</string>
@@ -12,6 +14,22 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_example">Example action</string>
+    <string name="helloworld">Hello World</string>
+    <string name="helloworldui">UI Controls</string>
+    <string name="helloworldcapturer">Custom Capturer</string>
+    <string name="helloworldrenderer">Custom Renderer</string>
+    <string name="helloworldsubclassing">Multiparty</string>
+    <string name="voinceonly">Voice Only</string>
+    <string name="audiodevice">Audio device</string>
+    <string name="swapStr">Swap camera</string>
+    <string name="endCall1">End call</string>
+    <string name="endCall2">End</string>
+    <string name="audioOnly">Audio only</string>
+    <string name="send">Send</string>
+    <string name="archivingOn">Archiving on</string>
+    <string name="archivingOff">Archiving off</string>
+    <string name="notification">Ongoing call</string>
+    <string name="clearNotificationService">Clear Notification</string>
 
     <!-- Navigation Strings -->
     <!-- Navigation Drawer -->
@@ -38,6 +56,7 @@
     <string name="title_activity_coment_experiencia">ComentExperienciaActivity</string>
     <string name="title_activity_proyectos">ProyectosActivity</string>
 
+
     <!-- Context menu -->
     <array name="context_items">
         <item>Asistir a evento</item>
@@ -47,4 +66,6 @@
     <string name="title_activity_event_info">EventInfoActivity</string>
     <string name="title_activity_comentario_proyectos">ComentarioProyectosActivity</string>
 
+
 </resources>
+

@@ -24,13 +24,16 @@ public class FactoryProyectosComentarios implements IFactoryProyectosComentarios
 		
 		this.comentarios = new ArrayList<ProyectosComentario>();
 		
-		
-		ProyectosComentario comment = new ProyectosComentario("pedro", "1	", "Muy bacano");
-		
-		
-		return null;
+		return this.comentarios;
 	}
 	
-	
+	public static FactoryProyectosComentarios getInstance(){
+		if(aFactoryProyectosComentarios == null){
+			aFactoryProyectosComentarios = new FactoryProyectosComentarios();
+			
+		}
+		
+		return aFactoryProyectosComentarios;
+	}
 
 }

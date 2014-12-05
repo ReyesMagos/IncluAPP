@@ -1,12 +1,5 @@
 package co.gov.dps.incluapp.presentacion.proyectos.fragments;
 
-import com.opentok.android.demo.opentoksamples.OpenTokSamples;
-
-import co.gov.dps.incluapp.R;
-import co.gov.dps.incluapp.dominio.adaptadores.proyectos.CustomAdapterProyectos;
-import co.gov.dps.incluapp.dominio.entidades.factory.proyectos.FactoryProyectos;
-import co.gov.dps.incluapp.dominio.entidades.projectos.Proyecto;
-import co.gov.dps.incluapp.presentacion.proyectos.ProyectosActivity;
 import android.app.ActionBar;
 import android.app.Fragment;
 import android.content.Intent;
@@ -18,8 +11,15 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ListView;
 import android.widget.AdapterView.OnItemLongClickListener;
+import android.widget.ListView;
+import co.gov.dps.incluapp.R;
+import co.gov.dps.incluapp.dominio.adaptadores.proyectos.CustomAdapterProyectos;
+import co.gov.dps.incluapp.dominio.entidades.factory.proyectos.FactoryProyectos;
+import co.gov.dps.incluapp.dominio.entidades.projectos.Proyecto;
+import co.gov.dps.incluapp.presentacion.eventos.CreateEventActivity;
+import co.gov.dps.incluapp.presentacion.proyectos.ProjectActivityCreate;
+import co.gov.dps.incluapp.presentacion.proyectos.ProyectosActivity;
 
 public class ProyectosFragment extends Fragment {
 
@@ -39,17 +39,14 @@ public class ProyectosFragment extends Fragment {
 		return rootView;
 
 	}
-	
 
 	public static View getCurrentView() {
 		return currentView;
 	}
 
-
 	public static void setCurrentView(View currentView) {
 		ProyectosFragment.currentView = currentView;
 	}
-
 
 	public void initComponents() {
 		this.listViewProyectos = (ListView) rootView
@@ -57,35 +54,49 @@ public class ProyectosFragment extends Fragment {
 		CustomAdapterProyectos customAdapterPro = new CustomAdapterProyectos(
 				rootView.getContext(), FactoryProyectos.getInstance()
 						.getProyectos());
-		
+
 		listViewProyectos.setAdapter(customAdapterPro);
-		listViewProyectos.setOnItemLongClickListener(new OnItemLongClickListener(){
-			@Override
-			public boolean onItemLongClick(AdapterView<?> adapter, View arg1,
-					int position, long arg3){
-				
-				Proyecto proy = (Proyecto) adapter.getAdapter().getItem(position);
-				
-				FactoryProyectos.getInstance().setProyectoToShow(proy);
-				
-				Intent i = new Intent(getActivity(), ProyectosActivity.class);
-				startActivity(i);
-				
-				return false;
-			}
-		});
-		
+		listViewProyectos
+				.setOnItemLongClickListener(new OnItemLongClickListener() {
+					@Override
+					public boolean onItemLongClick(AdapterView<?> adapter,
+							View arg1, int position, long arg3) {
+
+						Proyecto proy = (Proyecto) adapter.getAdapter()
+								.getItem(position);
+
+						FactoryProyectos.getInstance().setProyectoToShow(proy);
+
+						Intent i = new Intent(getActivity(),
+								ProyectosActivity.class);
+						startActivity(i);
+
+						return false;
+					}
+				});
+
 		ActionBar actionBar = getActivity().getActionBar();
 		actionBar.setIcon(R.drawable.ic_launcher);
 
 	}
-	
-	
 
 	@Override
 	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-		inflater.inflate(R.menu.proyectos, menu);
+		inflater.inflate(R.menu.project_activity_create, menu);
 		super.onCreateOptionsMenu(menu, inflater);
+	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		
+		switch (item.getItemId()) {
+		case R.id.create_project:
+			startActivity(new Intent(getActivity(), ProjectActivityCreate.class));
+			break;
+		default:
+			break;
+		}
+		return super.onOptionsItemSelected(item);
 	}
 
 }

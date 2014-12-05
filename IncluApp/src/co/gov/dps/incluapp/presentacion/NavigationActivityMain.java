@@ -7,14 +7,22 @@ import android.app.ActionBar;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.view.Menu;
 import android.view.MenuItem;
 import co.gov.dps.incluapp.R;
+
+import co.gov.dps.incluapp.controladores.Comunicador;
+
 import co.gov.dps.incluapp.TimelineActivity;
+
 import co.gov.dps.incluapp.dominio.entidades.experiencias.fragments.ExperienciaFragment;
 import co.gov.dps.incluapp.presentacion.eventos.EventosListActivityFragment;
+import co.gov.dps.incluapp.presentacion.expericiencias.MapsActivity;
 import co.gov.dps.incluapp.presentacion.proyectos.fragments.ProyectosFragment;
 import co.gov.dps.incluapp.presentacion.timeline.fragments.TimelineFragment;
 
@@ -45,10 +53,12 @@ public class NavigationActivityMain extends Activity implements
 		// Set up the drawer.
 		mNavigationDrawerFragment.setUp(R.id.navigation_drawer,
 				(DrawerLayout) findViewById(R.id.drawer_layout));
-		
-        Parse.initialize(this, "tts9uJk33PucVBuNXSIS4TftFWzoKCNn6kcfSLtE", "LoujGUFKApCyECwX3JzoEOxSL2SwrPqUMc8vUe0K");
-        // Also in this method, specify a default Activity to handle push notifications
-        PushService.setDefaultPushCallback(this, TimelineActivity.class);
+
+		Parse.initialize(this, "tts9uJk33PucVBuNXSIS4TftFWzoKCNn6kcfSLtE",
+				"LoujGUFKApCyECwX3JzoEOxSL2SwrPqUMc8vUe0K");
+		// Also in this method, specify a default Activity to handle push
+		// notifications
+		PushService.setDefaultPushCallback(this, TimelineActivity.class);
 	}
 
 	@Override
@@ -68,11 +78,9 @@ public class NavigationActivityMain extends Activity implements
 			fragment = new ProyectosFragment();
 			break;
 		case 3:
-			
+			fragment = new EventosListActivityFragment();
 			break;
 		case 4:
-			fragment = new EventosListActivityFragment();
-
 			break;
 		default:
 			break;
@@ -80,6 +88,12 @@ public class NavigationActivityMain extends Activity implements
 
 		fragmentManager.beginTransaction().replace(R.id.container, fragment)
 				.commit();
+	}
+
+	public void showExperienceOnMaps() {
+		Comunicador.setMapOption(2);
+		Intent i = new Intent(getApplicationContext(), MapsActivity.class);
+		startActivity(i);
 	}
 
 	public void onSectionAttached(int number) {
@@ -104,8 +118,9 @@ public class NavigationActivityMain extends Activity implements
 		actionBar.setDisplayShowTitleEnabled(true);
 		actionBar.setTitle(mTitle);
 		// TODO: Para cambiar color del action
-		// actionBar.setBackgroundDrawable(new
-		// ColorDrawable(Color.parseColor("#3498db")));
+		actionBar.setBackgroundDrawable(new ColorDrawable(Color
+				.parseColor("#6699cc")));
+
 	}
 
 	@Override
@@ -127,7 +142,8 @@ public class NavigationActivityMain extends Activity implements
 		// automatically handle clicks on the Home/Up button, so long
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
-		if (id == R.id.action_settings) {
+		if (id == R.id.maps) {
+			showExperienceOnMaps();
 			return true;
 		}
 		return super.onOptionsItemSelected(item);

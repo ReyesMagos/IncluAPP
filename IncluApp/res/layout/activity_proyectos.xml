@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     android:orientation="vertical"
     tools:context="co.gov.dps.incluapp.presentacion.proyectos.ProyectosActivity" >
 
@@ -56,8 +57,8 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:text="TextView" />
-    
-        <TextView
+
+    <TextView
         android:id="@+id/proyecto_textInicioTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -100,14 +101,14 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="showComments"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/comentar_btn" />
 
         <ImageView
             android:id="@+id/btn_compartir"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/share_btn" />
 
         <ImageView
             android:id="@+id/btn_llamar"
@@ -115,7 +116,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="call_Click"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/mensaje_btn" />
+          />
     </LinearLayout>
 
 </LinearLayout>

@@ -8,8 +8,12 @@ import co.gov.dps.incluapp.R.layout;
 import co.gov.dps.incluapp.R.menu;
 import co.gov.dps.incluapp.controladores.ProyectosController;
 import co.gov.dps.incluapp.dominio.entidades.projectos.Proyecto;
+import android.app.ActionBar;
 import android.app.Activity;
+import android.app.Notification.Action;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -33,6 +37,10 @@ public class ProyectosActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_proyectos);
 		init();
+		ColorDrawable colorDrawable = new ColorDrawable(
+				Color.parseColor("#6699cc"));
+		ActionBar actionBar = getActionBar();
+		actionBar.setBackgroundDrawable(colorDrawable);
 	}
 
 	public void showComments(View view) {
@@ -49,6 +57,10 @@ public class ProyectosActivity extends Activity {
 		txtinicio = (TextView) findViewById(R.id.proyectos_textInicio);
 		txtTags = (TextView) findViewById(R.id.proyectos_txt_tag);
 
+		ActionBar actionBar = getActionBar();
+		actionBar.setBackgroundDrawable(new ColorDrawable(Color
+				.parseColor("#6699cc")));
+		
 		controlador.showProyecto();
 	}
 

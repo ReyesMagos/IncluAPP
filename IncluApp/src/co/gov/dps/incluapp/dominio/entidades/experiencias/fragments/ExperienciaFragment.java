@@ -52,7 +52,6 @@ public class ExperienciaFragment extends Fragment {
 			@Override
 			public boolean onItemLongClick(AdapterView<?> adapter, View arg1,
 					int position, long arg3) {
-				// TODO Auto-generated method stub
 				FactoryExperiencias.getInstance().setExperienceToShow(
 						(Experiencia) adapter.getAdapter().getItem(position));
 				Intent i = new Intent(getActivity(), ExperienciasActivity.class);

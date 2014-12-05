@@ -120,7 +120,6 @@ public class NavigationDrawerFragment extends Fragment {
 	        navDrawItems.add(new NavigationDrawItem(mNavTitles[2],navMenuIcons.getResourceId(1,-1)));
 	        navDrawItems.add(new NavigationDrawItem(mNavTitles[3],navMenuIcons.getResourceId(1,-1), true, "5"));
 	        navDrawItems.add(new NavigationDrawItem(mNavTitles[4],navMenuIcons.getResourceId(2,-1)));
-	        navDrawItems.add(new NavigationDrawItem(mNavTitles[5],navMenuIcons.getResourceId(2,-1)));
 
 
 	        NavigationDrawListAdapter adapter = new NavigationDrawListAdapter(inflater.getContext(), navDrawItems);

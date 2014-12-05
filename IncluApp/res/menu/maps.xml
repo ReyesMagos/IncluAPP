@@ -6,7 +6,7 @@
         android:id="@+id/street_view"
         android:orderInCategory="100"
         android:showAsAction="always"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/stree_view_action"
         android:title="@string/action_settings"/>
 
 </menu>

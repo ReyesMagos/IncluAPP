@@ -1,5 +1,7 @@
 package co.gov.dps.incluapp.presentacion.expericiencias;
 
+import java.util.List;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
@@ -37,6 +39,12 @@ public class MapsActivity extends Activity {
 		if (Comunicador.getMapOption() == 1) {
 			ubicarExperiencia(FactoryExperiencias.getInstance()
 					.getExperienceToShow(), 12);
+		} else {
+			List<Experiencia> listaE = FactoryExperiencias.getInstance()
+					.getListExperiencias();
+			for (Experiencia e : listaE) {
+				ubicarExperiencia(e, 12);
+			}
 		}
 	}
 
@@ -104,14 +112,16 @@ public class MapsActivity extends Activity {
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
 		if (id == R.id.street_view) {
-			Experiencia e = FactoryExperiencias.getInstance().getExperienceToShow();
-			Uri streetViewUri = Uri.parse("google.streetview:cbll="
-					+ e.getUbication().getLat() + ","
-					+ e.getUbication().getLon()
-					+ "&cbp=1,90,,0,1.0&mz=20");
-			Intent streetViewIntent = new Intent(Intent.ACTION_VIEW,
-					streetViewUri);
-			startActivity(streetViewIntent);
+			if (Comunicador.getMapOption() == 1) {
+				Experiencia e = FactoryExperiencias.getInstance()
+						.getExperienceToShow();
+				Uri streetViewUri = Uri.parse("google.streetview:cbll="
+						+ e.getUbication().getLat() + ","
+						+ e.getUbication().getLon() + "&cbp=1,90,,0,1.0&mz=20");
+				Intent streetViewIntent = new Intent(Intent.ACTION_VIEW,
+						streetViewUri);
+				startActivity(streetViewIntent);
+			}
 			return true;
 		}
 		return super.onOptionsItemSelected(item);

@@ -53,7 +53,7 @@ public class CustomAdapterEventos extends BaseAdapter {
 
 			viewHolder = new ViewHolder();
 			viewHolder.imgIcon = (ImageView) convertView
-					.findViewById(R.id.im_icon);
+					.findViewById(R.id.img_icon_1);
 			viewHolder.txtTitle = (TextView) convertView
 					.findViewById(R.id.txt_title);
 			viewHolder.txtPlace = (TextView) convertView
@@ -70,6 +70,10 @@ public class CustomAdapterEventos extends BaseAdapter {
 
 		Evento evento = getItem(position);
 
+		viewHolder.imgIcon.setImageDrawable(context.getResources().getDrawable(
+				R.drawable.invitation_icon));
+		// viewHolder.imgIcon.setImageDrawable(context.getResources().getDrawable(
+		// R.drawable.icono_experiencia));
 		viewHolder.txtTitle.setText(evento.getEventName());
 		viewHolder.txtPlace.setText(evento.getUbicacion().getCity());
 		viewHolder.txtDate.setText("21/07/2014");

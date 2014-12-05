@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="co.gov.dps.incluapp.presentacion.proyectos.ProyectosActivity" >
+    tools:context="co.gov.dps.incluapp.presentacion.proyectos.ProyectosActivity" 
+    android:background="@drawable/fondo">
 
     <TextView
         android:id="@+id/proyecto_txt_ActSub"
@@ -68,7 +69,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="showComments"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/comentar_btn" />
 
 
         <ImageView
@@ -76,14 +77,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/share_btn" />
 
         <ImageView
             android:id="@+id/btn_mensaje"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/mensaje_btn" />
     </LinearLayout>
 
 </LinearLayout>

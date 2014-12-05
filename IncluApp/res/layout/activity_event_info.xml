@@ -130,7 +130,7 @@
             android:layout_height="55dp"
             android:layout_weight="1"
             android:onClick="onCommentClick"
-            android:src="@android:drawable/ic_dialog_map" />
+            android:src="@drawable/comentar_btn" />
 
         <ImageView
             android:id="@+id/img_share"
@@ -138,7 +138,7 @@
             android:layout_height="55dp"
             android:layout_weight="1"
             android:onClick="onShareClick"
-            android:src="@android:drawable/ic_menu_share" />
+            android:src="@drawable/share_btn" />
 
     </LinearLayout>
 

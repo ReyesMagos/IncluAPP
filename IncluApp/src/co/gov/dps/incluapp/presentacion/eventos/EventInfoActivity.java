@@ -4,7 +4,9 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.View.OnTouchListener;
 import android.widget.ImageView;
 import android.widget.TextView;
 import co.gov.dps.incluapp.R;
@@ -31,6 +33,8 @@ public class EventInfoActivity extends Activity {
 	}
 
 	public void initComponents() {
+		this.imgComment = (ImageView) super.findViewById(R.id.img_comment);
+		this.imgShare = (ImageView) super.findViewById(R.id.img_share);
 		this.imageView = (ImageView) super.findViewById(R.id.imageView1);
 		this.txtNameEvent = (TextView) super.findViewById(R.id.txt_name_text);
 		this.txtPlaceEvent = (TextView) super.findViewById(R.id.txt_lugar_text);
@@ -38,6 +42,48 @@ public class EventInfoActivity extends Activity {
 		this.txtDescripcion = (TextView) super
 				.findViewById(R.id.txt_descripcion_text);
 		this.abstractController = new AbstractController(this);
+
+		imgShare.setOnTouchListener(new OnTouchListener() {
+			@Override
+			public boolean onTouch(View v, MotionEvent arg1) {
+				switch (arg1.getAction()) {
+				case MotionEvent.ACTION_DOWN: {
+					imgShare.setImageDrawable(getResources().getDrawable(
+							R.drawable.share_btn_pressed));
+					onShareClick(v);
+
+					break;
+				}
+				case MotionEvent.ACTION_UP: {
+					imgShare.setImageDrawable(getResources().getDrawable(
+							R.drawable.share_btn));
+					break;
+				}
+				}
+				return true;
+			}
+		});
+
+		imgComment.setOnTouchListener(new OnTouchListener() {
+			@Override
+			public boolean onTouch(View v, MotionEvent arg1) {
+				switch (arg1.getAction()) {
+				case MotionEvent.ACTION_DOWN: {
+					imgComment.setImageDrawable(getResources().getDrawable(
+							R.drawable.comentar_btn_pressed));
+					onCommentClick(v);
+
+					break;
+				}
+				case MotionEvent.ACTION_UP: {
+					imgComment.setImageDrawable(getResources().getDrawable(
+							R.drawable.comentar_btn));
+					break;
+				}
+				}
+				return true;
+			}
+		});
 
 		Bundle bundle = getIntent().getExtras();
 
@@ -70,7 +116,7 @@ public class EventInfoActivity extends Activity {
 
 		abstractController
 				.showAlertMessage("Alerta",
-						"Por favor Inicie Sesión o Registrate en la aplicación para poder comentar");
+						"Por favor Inicie Sesiï¿½n o Registrate en la aplicaciï¿½n para poder comentar");
 	}
 
 	public void onShareClick(View view) {

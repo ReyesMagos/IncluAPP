@@ -30,7 +30,7 @@
 
     <!--
   IMPORTANT: Change "com.parse.starter.permission.C2D_MESSAGE" in the lines below
-  to match your app's package name + ".permission.C2D_MESSAGE".
+  to match your app's package name + ".permission.C2D_MESSAGE".
     -->
     <permission
         android:name="co.gov.dps.incluapp.permission.C2D_MESSAGE"
@@ -93,6 +93,16 @@
             android:name=".presentacion.NavigationActivityMain"
             android:label="@string/app_name" >
             <intent-filter>
+                <action android:name="co.gov.dps.incluapp.presentacion.NavigationActivityMain" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="co.gov.dps.incluapp.presentacion.bienvenida.Bienvenida"
+            android:label="IncluApp"
+            android:screenOrientation="portrait" >
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -131,7 +141,6 @@
             android:label="@string/title_activity_proyectos" >
         </activity>
 
-
         <service android:name="com.parse.PushService" />
 
         <receiver android:name="com.parse.ParseBroadcastReceiver" >
@@ -165,7 +174,6 @@
             android:name="co.gov.dps.incluapp.presentacion.proyectos.ProjectActivityCreate"
             android:label="@string/title_activity_project_activity_create" >
         </activity>
-
     </application>
 
 </manifest>

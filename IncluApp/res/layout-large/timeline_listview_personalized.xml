@@ -6,9 +6,9 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" 
-        android:orientation="horizontal"
-        android:layout_marginTop="15dp">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
 
         <ImageView
             android:id="@+id/img_icon"
@@ -24,24 +24,21 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textSize="25sp"
             android:textStyle="bold|italic" />
-
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" 
-        android:orientation="vertical"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
 
         <TextView
             android:id="@+id/txt_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Small Text"
-            android:textAppearance="?android:attr/textAppearanceSmall" 
-            android:textSize="15sp"/>
-
+            android:textSize="18sp" />
     </LinearLayout>
 
 </LinearLayout>

@@ -4,7 +4,6 @@ import java.util.List;
 
 import co.gov.dps.incluapp.dominio.entidades.Ubicacion;
 import co.gov.dps.incluapp.dominio.entidades.User;
-import android.graphics.Bitmap;
 
 public class Experiencia {
 	
@@ -44,6 +43,12 @@ public class Experiencia {
 	}
 	public void setEstado(boolean estado) {
 		this.estado = estado;
+	}
+	public List<ComentExperiencia> getComents() {
+		return coments;
+	}
+	public void setComents(List<ComentExperiencia> coments) {
+		this.coments = coments;
 	}
 	
 	

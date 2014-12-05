@@ -36,5 +36,15 @@
     <string name="eventos_title_text">Eventos</string>
     <string name="crear_evento_text">Crear Evento</string>
     <string name="title_activity_coment_experiencia">ComentExperienciaActivity</string>
+    <string name="title_activity_proyectos">ProyectosActivity</string>
+
+
+    <!-- Context menu -->
+    <array name="context_items">
+        <item>Asistir a evento</item>
+        <item>Ver Información</item>
+    </array>
+
+    <string name="title_activity_event_info">EventInfoActivity</string>
 
 </resources>

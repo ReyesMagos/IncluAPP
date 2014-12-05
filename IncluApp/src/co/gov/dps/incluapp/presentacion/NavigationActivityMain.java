@@ -6,14 +6,12 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
 import co.gov.dps.incluapp.R;
 import co.gov.dps.incluapp.dominio.entidades.experiencias.fragments.ExperienciaFragment;
 import co.gov.dps.incluapp.presentacion.eventos.EventosListActivityFragment;
+import co.gov.dps.incluapp.presentacion.proyectos.fragments.ProyectosFragment;
 import co.gov.dps.incluapp.presentacion.timeline.fragments.TimelineFragment;
 
 public class NavigationActivityMain extends Activity implements
@@ -59,6 +57,7 @@ public class NavigationActivityMain extends Activity implements
 
 			break;
 		case 2:
+			fragment = new ProyectosFragment();
 			break;
 		case 3:
 			

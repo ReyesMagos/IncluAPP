@@ -10,7 +10,28 @@ public class User {
 	private String profession;
 	private Bitmap profilePicture;
 	
+	public User(){
+		super();
+	}
 	
+	public User(String name, String lastName, String age, String profession){
+		super();
+		this.name = name;
+		this.lastName = lastName;
+		this.age = age;
+		this.profession = profession;
+	}
+	
+	
+	public User(String name, String lastName, String age, String profession,
+			Bitmap profilePicture) {
+		super();
+		this.name = name;
+		this.lastName = lastName;
+		this.age = age;
+		this.profession = profession;
+		this.profilePicture = profilePicture;
+	}
 	public String getName() {
 		return name;
 	}

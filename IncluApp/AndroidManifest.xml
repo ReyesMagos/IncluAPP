@@ -48,12 +48,24 @@
             android:label="@string/title_activity_maps" >
         </activity>
         <activity
-            android:name=".CreateEventActivity"
+            android:name=".presentacion.eventos.CreateEventActivity"
             android:label="@string/title_activity_create_event" >
         </activity>
         <activity
-            android:name=".ComentExperienciaActivity"
+            android:name="co.gov.dps.incluapp.presentacion.expericiencias.ComentExperienciaActivity"
             android:label="@string/title_activity_coment_experiencia" >
+        </activity>
+        <activity
+            android:name=".servicios.qrservice.GenerateQRCodeActivity"
+            android:label="Generar Codigo QR" >
+        </activity>
+        <activity
+            android:name=".servicios.qrservice.ReadQRCodeActivity"
+            android:label="Read QR Code Activity" >
+        </activity>
+        <activity
+            android:name="co.gov.dps.incluapp.presentacion.eventos.EventInfoActivity"
+            android:label="@string/title_activity_event_info" >
         </activity>
     </application>
 

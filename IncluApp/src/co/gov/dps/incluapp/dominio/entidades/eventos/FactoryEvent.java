@@ -29,6 +29,7 @@ public class FactoryEvent {
 		ubicacion.setLon(-75.510697);
 		ubicacion.setState("Bolivar");
 		evento.setUbicacion(ubicacion);
+		evento.setCodigo("123");
 		evento.setFecha(new Date(2014,12,20));
 		
 		Evento evento1 = new Evento();
@@ -41,6 +42,7 @@ public class FactoryEvent {
 		ubicacion1.setLon(-75.510697);
 		ubicacion1.setState("Bolivar");
 		evento1.setUbicacion(ubicacion1);
+		evento.setCodigo("1234");
 		evento1.setFecha(new Date(2014,12,20));
 		
 		eventos.add(evento);
@@ -49,6 +51,10 @@ public class FactoryEvent {
 
 		return eventos;
 
+	}
+	
+	public void setEvent(Evento evento){
+		this.listEventos.add(evento);
 	}
 
 }

@@ -24,7 +24,9 @@ public class EventosListActivityFragment extends Fragment {
 			Bundle savedInstanceState) {
 		rootView = inflater.inflate(R.layout.eventos_activity_main, container,
 				false);
+		setHasOptionsMenu(true);
 		initComponents();
+
 		return rootView;
 	}
 
@@ -36,21 +38,31 @@ public class EventosListActivityFragment extends Fragment {
 				rootView.getContext(), FactoryEvent.getInstance());
 
 		listViewEvents.setAdapter(customAdapterEventos);
-		
+
 		ActionBar actionBar = getActivity().getActionBar();
-		
+		actionBar.setIcon(R.drawable.ic_launcher);
 
 	}
-	
+
 	@Override
 	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-		// TODO Auto-generated method stub
+		
+		inflater.inflate(R.menu.events_fragments, menu);
 		super.onCreateOptionsMenu(menu, inflater);
 	}
-	
+
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		// TODO Auto-generated method stub
+		
+		switch (item.getItemId()) {
+		case R.id.create_event:
+			
+			break;
+
+		default:
+			break;
+		}
+		
 		return super.onOptionsItemSelected(item);
 	}
 }

@@ -22,10 +22,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
-            android:name="co.gov.dps.incluapp.presentacion.expericiencias.Experiencias"
+            android:name=".presentacion.expericiencias.Experiencias"
             android:label="@string/title_activity_experiencias" >
+        </activity>
+        <activity
+            android:name=".CreateEventActivity"
+            android:label="@string/title_activity_create_event" >
         </activity>
     </application>
 

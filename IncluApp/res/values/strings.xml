@@ -12,27 +12,27 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_example">Example action</string>
-    
+
     <!-- Navigation Strings -->
-    <!-- Navigation Drawer-->
+    <!-- Navigation Drawer -->
     <array name="nav_drawer_titles">
+        <item>Inicio</item>
         <item>Experiencias</item>
         <item>Proyectos</item>
         <item>Mapas</item>
         <item>Eventos</item>
         <item>Iniciar Sesión</item>
     </array>
-
     <array name="nav_drawer_icons">
         <item>@drawable/task</item>
         <item>@drawable/grades</item>
         <item>@drawable/messages</item>
     </array>
-    
+
     <string name="desc_list_item_icon">Item Icon</string>
-    
-
     <string name="title_activity_experiencias">Experiencias</string>
-
+    <string name="title_activity_create_event">CreateEventActivity</string>
+    <string name="eventos_title_text">Eventos</string>
+    <string name="crear_evento_text">Crear Evento</string>
 
 </resources>

@@ -53,7 +53,14 @@ public class NavigationActivityMain extends Activity implements
 		case 0:
 			fragment = new TimelineFragment();
 			break;
+		case 1:
+			break;
+		case 2:
+			break;
 		case 3:
+			
+			break;
+		case 4:
 			fragment = new EventosListActivityFragment();
 			break;
 		default:

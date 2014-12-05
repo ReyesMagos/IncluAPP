@@ -51,14 +51,14 @@ public class FactoryExperiencias implements IFactoryExperiencias {
 
 		ComentExperiencia coment = new ComentExperiencia();
 		coment.setDate("12/05/2013");
-		coment.setComent("Lorem Ipsum Dolor");
+		coment.setComent("Muy buena historia debes buscar inclusion");
 		coment.setUserName("Ana Bolivar");
 		coment.setPuntuation(3);
 		listaComentarios.add(coment);
 
 		coment = new ComentExperiencia();
 		coment.setDate("28/08/2014");
-		coment.setComent("Una Chimba");
+		coment.setComent("Politico buenos al poder, ciudadano sufre ley 100");
 		coment.setPuntuation(4);
 		coment.setUserName("Ana Zapata");
 		listaComentarios.add(coment);
@@ -66,17 +66,17 @@ public class FactoryExperiencias implements IFactoryExperiencias {
 		expirience.setComents(listaComentarios);
 		expirience.setUser(user);
 		expirience.setUbication(ubication);
-		expirience.setDescription(" enim ad minima veniam, "
-				+ "quis nostrum exercitationem ullam corporis"
-				+ " suscipit laboriosam, nisi ut aliquid ex ea "
-				+ "commodi consequatur? Quis autem vel eum iure "
-				+ "reprehenderit qui in ea voluptate velit  ");
-		expirience.setTitle("Lorem ipsum Dolor");
+		expirience.setDescription("En 1999 pasado en el parque de Envigado a m " +
+				"hijo lo secuestraron en el pasaje de la alcaldia" +
+				"y fue doloroso ver como se lo llevaron de mi vida, solo 4" +
+				" años despues que supe que habia reporte de victimas y personas " +
+				"perdidas puede aliviar de alguna manera mi dolos   ");
+		expirience.setTitle("Envigado Desaparecido");
 		expirience.setEstado(true);
 
 		listExpiriences.add(expirience);
 
-		//An other One
+		// An other One
 		listaComentarios = new ArrayList<ComentExperiencia>();
 		Experiencia expirience2 = new Experiencia();
 		user = new User();
@@ -97,26 +97,26 @@ public class FactoryExperiencias implements IFactoryExperiencias {
 		ubication.setCity("Cartagena");
 		ubication.setAddress("Las Americas Resort");
 
-		ubication.setLat(	10.458953);
+		ubication.setLat(10.458953);
 		ubication.setLon(-75.507402);
 
 		coment = new ComentExperiencia();
 		coment.setDate("12/14/2015");
-		coment.setComent("Lorem Ipsum Dolor");
+		coment.setComent("Eres un ejemplo de vida");
 		coment.setUserName("Alexis Calderon");
 		coment.setPuntuation(2);
 		listaComentarios.add(coment);
 
 		coment = new ComentExperiencia();
 		coment.setDate("09/03/2013");
-		coment.setComent("Una Chimba");
+		coment.setComent("Que viva la superacion");
 		coment.setPuntuation(4);
 		coment.setUserName("Jairo Fernandes");
 		listaComentarios.add(coment);
-		
+
 		coment = new ComentExperiencia();
 		coment.setDate("10/03/2014");
-		coment.setComent("Una Chimba Parce");
+		coment.setComent("Doloroso pero es ya se a que tengo derecho");
 		coment.setPuntuation(4);
 		coment.setUserName("Anabel Garcias");
 		listaComentarios.add(coment);
@@ -124,16 +124,61 @@ public class FactoryExperiencias implements IFactoryExperiencias {
 		expirience2.setComents(listaComentarios);
 		expirience2.setUser(user);
 		expirience2.setUbication(ubication);
-		expirience2.setDescription(" enim ad minima veniam, "
-				+ "quis nostrum exercitationem ullam corporis"
-				+ " suscipit laboriosam, nisi ut aliquid ex ea "
-				+ "commodi consequatur? Quis autem vel eum iure "
-				+ "reprehenderit qui in ea voluptate velit  ");
-		expirience2.setTitle("Lorem ipsum Dolor");
+		expirience2.setDescription("En  Junio del 2001  estaba caminando por la playa y " +
+				"como dice el dicho una Mina es para aquel que le toca" +
+				"gracias a conocer mis DERECHOS puede concegir beneficios que me ayudaron a seguir " +
+				"desarollandome como ser humano  ");
+		expirience2.setTitle("Playa De mi Alma");
 		expirience2.setEstado(true);
 
 		listExpiriences.add(expirience2);
 
+		expirience2 = new Experiencia();
+		user = new User();
+		user.setName("Daniela");
+		user.setLastName("Perdomo");
+		user.setAge("18");
+		user.setProfession("Enfermera");
+		if (ExperienciaFragment.getCurrentView() != null)
+			user.setProfilePicture(BitmapFactory.decodeResource(
+					ExperienciaFragment.getCurrentView().getContext()
+							.getResources(), R.drawable.daniela));
+		else
+			user.setProfilePicture(BitmapFactory.decodeResource(Comunicador
+					.getCurrentVier().getContext().getResources(),
+					R.drawable.daniela));
+		ubication = new Ubicacion();
+		ubication.setState("Santander");
+		ubication.setCity("Bucaramanga");
+		ubication.setAddress("Neo Mundos");
+		ubication.setLat(103016);
+		ubication.setLon(-73.119141);
+
+		coment = new ComentExperiencia();
+		coment.setDate("12/14/2011");
+		coment.setComent("Lorem Ipsum Dolor");
+		coment.setUserName("Oscar Gallon");
+		coment.setPuntuation(2);
+		listaComentarios.add(coment);
+
+		coment = new ComentExperiencia();
+		coment.setDate("10/05/2012");
+		coment.setComent("Excelente Aporte Esto me ayudo A Saber Mass");
+		coment.setPuntuation(4);
+		coment.setUserName("Santiago Palacio");
+		listaComentarios.add(coment);
+
+		expirience2.setComents(listaComentarios);
+		expirience2.setUser(user);
+		expirience2.setUbication(ubication);
+		expirience2.setDescription(" En neo mundo me fue muy mal +" +
+				"en dicimebre de 2001 un grupo violento armado" +
+				"se tomo este lugar y lastimaron mi integridad" +
+				"como persona, dandome trauma posttraumatico  ");
+		expirience2.setTitle("NeoDOLOr");
+		expirience2.setEstado(true);
+
+		listExpiriences.add(expirience2);
 
 		return listExpiriences;
 	}

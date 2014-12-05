@@ -41,8 +41,11 @@
     </array>
     <array name="nav_drawer_icons">
         <item>@drawable/home_icon</item>
-        <item>@drawable/home_icon</item>
-        <item>@drawable/messages</item>
+        <item>@drawable/experience_icon</item>
+        <item>@drawable/project_icon1</item>
+        <item>@drawable/events1_icon</item>
+        <item>@drawable/login17_icon</item>
+        
     </array>
 
     <string name="desc_list_item_icon">Item Icon</string>
@@ -63,5 +66,6 @@
     <string name="title_activity_event_info">EventInfoActivity</string>
     <string name="title_activity_comentario_proyectos">ComentarioProyectosActivity</string>
     <string name="title_activity_project_activity_create">ProjectActivityCreate</string>
+    <string name="title_activity_sing_up">SingUpActivity</string>
 
 </resources>

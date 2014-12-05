@@ -33,7 +33,7 @@ module.exports = {
         required: true
     },
     state: {
-        type: 'boolean',
+        type: 'string',
         required: true
     }, user:{
     	model:'user'

@@ -3,6 +3,8 @@ package co.gov.dps.incluapp.servicios.qrservice;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.graphics.Bitmap;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -28,6 +30,9 @@ public class GenerateQRCodeActivity extends Activity {
 		facadeController.generateQrCode(FactoryEvent.getInstance().get(0));
 		action = getActionBar();
 		action.setTitle("Generar Codigo QR");
+		ActionBar actionBar = getActionBar();
+		actionBar.setBackgroundDrawable(new ColorDrawable(Color
+				.parseColor("#6699cc")));
 
 	}
 

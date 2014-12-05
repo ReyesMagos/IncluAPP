@@ -19,7 +19,7 @@
             android:id="@+id/imageView1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/ic_plusone_medium_off_client" />
+            android:src="@drawable/even_info" />
     </LinearLayout>
 
     <LinearLayout

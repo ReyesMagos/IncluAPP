@@ -35,5 +35,23 @@ module.exports = {
 			});
 // body...
 		});
+	}, index:function (req, res, next) {
+		 Experiencia.find(function (err, expiriences) {
+		 	if(err)
+		 		return next(err);
+		 	res.view({
+		 		expiriences:expiriences
+		 	});
+		 	// body...
+		 })
+		// body...
+	},destroy:function (req,res, next) {
+		Experiencia.destroy(req.param('id'), function experienceDestroyed (err) {
+			if(err)
+				return next(err);
+			res.redirect('experiencia/index');
+			// body...
+		})
+		// body...
 	}
 };

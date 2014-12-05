@@ -13,7 +13,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="110dp"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:layout_weight="2" >
 
         <ImageView
             android:id="@+id/imageView1"
@@ -35,7 +36,8 @@
             android:layout_gravity="center"
             android:text="Información Evento"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textStyle="bold|italic" />
+            android:textStyle="bold|italic" 
+            android:textSize="25sp"/>
     </LinearLayout>
 
     <LinearLayout

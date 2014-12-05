@@ -30,6 +30,7 @@ module.exports = {
 		Experiencia.findOne(req.param('id'), function experienceFounded (err, experience) {
 			if(err)
 			return next(err);
+			console.log("culo: ::: "+ experience)
 			res.view({
 				experience:experience
 			});
@@ -53,5 +54,32 @@ module.exports = {
 			// body...
 		})
 		// body...
+	},edit:function (req, res, next) {
+		// body...
+			Experiencia.findOne(req.param('id'), function experienceFounded (err, experience) {
+			if(err)
+			return next(err);
+			res.view({
+				experience:experience
+			});
+// body...
+		});
+	}, update:function  (req, res, next) {
+		// body...
+		 var experiencia = {
+            title: req.param('title'),
+            description: req.param('description'),
+            depto: req.param('depto'),
+            city: req.param('city'),
+            address: req.param('address'),
+            state: req.param('state')
+        }
+        Experiencia.update(req.param('id'), experiencia, function experienciaUpdated (err, experience) {
+        	if(err)
+        		return next(err);
+        	// body...
+        	console.log(experience);
+        	res.redirect('/experiencia/show/'+ req.param('id'));
+        });
 	}
 };

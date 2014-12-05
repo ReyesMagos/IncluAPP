@@ -3,5 +3,11 @@
 	<li><%=experience.title%></li>
 	<li><%=experience.description%></li>
 	</ol>
+		<td>
+				<form action="/experiencia/edit/<%= experience.id%>" method="POST" accept-charset="utf-8">
+					<input type="submit"  class="btn btn-sm btn-danger" value="Editar"/>
+					<input type="hidden" name="_csrf" value="<%= _csrf %>"/>
+				</form>
+			</td>
 
 </div>

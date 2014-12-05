@@ -4,6 +4,9 @@ import co.gov.dps.incluapp.R;
 import co.gov.dps.incluapp.R.id;
 import co.gov.dps.incluapp.R.layout;
 import co.gov.dps.incluapp.R.menu;
+import co.gov.dps.incluapp.controladores.Comunicador;
+import co.gov.dps.incluapp.controladores.ExperienciasController;
+import co.gov.dps.incluapp.dominio.entidades.experiencias.Experiencia;
 import co.gov.dps.incluapp.dominio.entidades.experiencias.fragments.ExperienciaFragment;
 import android.app.Activity;
 import android.app.ActionBar;
@@ -14,20 +17,50 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.os.Build;
 
 public class ExperienciasActivity extends Activity {
+
+	private TextView txtTitulo;
+	private ImageView imProfile;
+	private TextView txtDescription;
+	private TextView txtUbicacion;
+	private ExperienciasController controller;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_experiencias);
-		Fragment experienciaFragment = new ExperienciaFragment();
-		
-		if (savedInstanceState == null) {
-			getFragmentManager().beginTransaction()
-					.add(R.id.container,experienciaFragment).commit();
-		}
+		init();
+
+	}
+
+	public void init() {
+		controller = new ExperienciasController(this);
+		txtTitulo = (TextView) findViewById(R.id.txt_title);
+		imProfile = (ImageView) findViewById(R.id.im_profile);
+		txtDescription = (TextView) findViewById(R.id.txt_description);
+		txtUbicacion = (TextView) findViewById(R.id.txt_ubication);
+		controller.showExperience();
+
+	}
+
+	public void showExperience(Experiencia expirience) {
+
+		txtTitulo.setText(expirience.getTitle());
+		imProfile.setImageBitmap(expirience.getUser().getProfilePicture());
+		txtDescription.setText(expirience.getDescription());
+		txtUbicacion.setText(expirience.getUbication().getState() + "/"
+				+ expirience.getUbication().getCity());
+
+	}
+
+	public void btnMap_Click(View view) {
+		//1 para mostrar uno
+		Comunicador.setMapOption(1);
+		controller.changeActivity(MapsActivity.class);
 	}
 
 	@Override
@@ -49,20 +82,4 @@ public class ExperienciasActivity extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 
-	/**
-	 * A placeholder fragment containing a simple view.
-	 */
-	public static class PlaceholderFragment extends Fragment {
-
-		public PlaceholderFragment() {
-		}
-
-		@Override
-		public View onCreateView(LayoutInflater inflater, ViewGroup container,
-				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.fragment_experiencias,
-					container, false);
-			return rootView;
-		}
-	}
 }

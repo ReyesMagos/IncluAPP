@@ -8,10 +8,15 @@ import co.gov.dps.incluapp.dominio.entidades.experiencias.Experiencia;
 import co.gov.dps.incluapp.dominio.entidades.factory.experiencias.FactoryExperiencias;
 import co.gov.dps.incluapp.presentacion.expericiencias.ExperienciasActivity;
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnLongClickListener;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.ListView;
 
 public class ExperienciaFragment extends Fragment {
@@ -20,7 +25,7 @@ public class ExperienciaFragment extends Fragment {
 	private ListView lvExpirience;
 	private CustomAdapterExperiencias customAdapterExperiencias;
 	private List<Experiencia> listExpirience;
-	public 	static View currentView;
+	public static View currentView;
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -30,8 +35,7 @@ public class ExperienciaFragment extends Fragment {
 				false);
 		currentView = rootView;
 		initComponents(rootView);
-		
-		
+
 		return rootView;
 	}
 
@@ -42,8 +46,22 @@ public class ExperienciaFragment extends Fragment {
 
 		customAdapterExperiencias = new CustomAdapterExperiencias(
 				view.getContext(), listExperiencia);
-		
+
 		lvExpirience.setAdapter(customAdapterExperiencias);
+
+		lvExpirience.setOnItemLongClickListener(new OnItemLongClickListener() {
+
+			@Override
+			public boolean onItemLongClick(AdapterView<?> adapter, View arg1,
+					int position, long arg3) {
+				// TODO Auto-generated method stub
+				FactoryExperiencias.getInstance().setExperienceToShow(
+						(Experiencia) adapter.getAdapter().getItem(position));
+				Intent i = new Intent(getActivity(), ExperienciasActivity.class);
+				startActivity(i);
+				return false;
+			}
+		});
 	}
 
 	public static View getCurrentView() {
@@ -54,5 +72,4 @@ public class ExperienciaFragment extends Fragment {
 		ExperienciaFragment.currentView = currentView;
 	}
 
-	
 }

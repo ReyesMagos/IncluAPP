@@ -40,8 +40,8 @@
         <item>Iniciar Sesión</item>
     </array>
     <array name="nav_drawer_icons">
-        <item>@drawable/task</item>
-        <item>@drawable/grades</item>
+        <item>@drawable/home_icon</item>
+        <item>@drawable/</item>
         <item>@drawable/messages</item>
     </array>
 

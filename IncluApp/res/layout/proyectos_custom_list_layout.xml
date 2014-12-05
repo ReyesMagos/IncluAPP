@@ -31,11 +31,11 @@
                 android:textStyle="bold|italic" />
 
             <TextView
-                android:id="@+id/proyecto_txt_grupoMeta"
+                android:id="@+id/proyecto_txt_tagssTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="GrupoMeta" />
+                android:text="Tags" />
 
             <TextView
                 android:id="@+id/proyectos_txt_descripcion"
@@ -54,11 +54,11 @@
         android:orientation="vertical" >
 
         <TextView
-            android:id="@+id/proyectos_txt_Tema"
+            android:id="@+id/proyectos_textRequieree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Tema"
+            android:text="Requiere"
             android:textAlignment="viewStart"
             android:textAppearance="?android:attr/textAppearanceSmall" />
     </LinearLayout>

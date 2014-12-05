@@ -1,5 +1,8 @@
 package co.gov.dps.incluapp.presentacion;
 
+import com.parse.Parse;
+import com.parse.PushService;
+
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.Fragment;
@@ -9,6 +12,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.view.Menu;
 import android.view.MenuItem;
 import co.gov.dps.incluapp.R;
+import co.gov.dps.incluapp.TimelineActivity;
 import co.gov.dps.incluapp.dominio.entidades.experiencias.fragments.ExperienciaFragment;
 import co.gov.dps.incluapp.presentacion.eventos.EventosListActivityFragment;
 import co.gov.dps.incluapp.presentacion.proyectos.fragments.ProyectosFragment;
@@ -41,6 +45,10 @@ public class NavigationActivityMain extends Activity implements
 		// Set up the drawer.
 		mNavigationDrawerFragment.setUp(R.id.navigation_drawer,
 				(DrawerLayout) findViewById(R.id.drawer_layout));
+		
+        Parse.initialize(this, "tts9uJk33PucVBuNXSIS4TftFWzoKCNn6kcfSLtE", "LoujGUFKApCyECwX3JzoEOxSL2SwrPqUMc8vUe0K");
+        // Also in this method, specify a default Activity to handle push notifications
+        PushService.setDefaultPushCallback(this, TimelineActivity.class);
 	}
 
 	@Override

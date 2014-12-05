@@ -1,5 +1,7 @@
 package co.gov.dps.incluapp.dominio.entidades.experiencias;
 
+import java.util.List;
+
 import co.gov.dps.incluapp.dominio.entidades.Ubicacion;
 import co.gov.dps.incluapp.dominio.entidades.User;
 import android.graphics.Bitmap;
@@ -11,6 +13,7 @@ public class Experiencia {
 	private User user;
 	private Ubicacion ubication;
 	private boolean estado;
+	private List<ComentExperiencia> coments;
 	
 	public String getTitle() {
 		return title;

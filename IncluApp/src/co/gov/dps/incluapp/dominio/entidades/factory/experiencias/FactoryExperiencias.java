@@ -8,6 +8,7 @@ import android.graphics.BitmapFactory;
 import co.gov.dps.incluapp.R;
 import co.gov.dps.incluapp.dominio.entidades.Ubicacion;
 import co.gov.dps.incluapp.dominio.entidades.User;
+import co.gov.dps.incluapp.dominio.entidades.experiencias.ComentExperiencia;
 import co.gov.dps.incluapp.dominio.entidades.experiencias.Experiencia;
 import co.gov.dps.incluapp.dominio.entidades.experiencias.fragments.ExperienciaFragment;
 
@@ -24,7 +25,7 @@ public class FactoryExperiencias implements IFactoryExperiencias {
 	@Override
 	public List<Experiencia> getListExperiencias() {
 		// TODO Auto-generated method stub
-
+		List<ComentExperiencia> listaComentarios= new ArrayList<ComentExperiencia>();
 		Experiencia expirience = new Experiencia();
 		listExpiriences = new ArrayList<Experiencia>();
 		User user = new User();
@@ -41,6 +42,19 @@ public class FactoryExperiencias implements IFactoryExperiencias {
 		ubication.setAddress("mi casa");
 		ubication.setLat(6.170060);
 		ubication.setLon(-75.581733);
+		ComentExperiencia coment = new ComentExperiencia();
+		coment.setDate("12/05/2013");
+		coment.setComent("Lorem Ipsum Dolor");
+		coment.setUserName("Ana Bolivar");
+		coment.setPuntuation(3);
+		listaComentarios.add(coment);
+		coment= new ComentExperiencia();
+		coment.setDate("28/08/2014");
+		coment.setComent("Una Chimba");
+		coment.setPuntuation(4);
+		coment.setUserName("Ana Zapata");
+		listaComentarios.add(coment);
+		
 		expirience.setUser(user);
 		expirience.setUbication(ubication);
 		expirience.setDescription(" enim ad minima veniam, "

@@ -63,5 +63,6 @@
     <string name="title_activity_event_info">EventInfoActivity</string>
     <string name="title_activity_comentario_proyectos">ComentarioProyectosActivity</string>
     <string name="title_activity_project_activity_create">ProjectActivityCreate</string>
+    <string name="title_activity_sing_up">SingUpActivity</string>
 
 </resources>

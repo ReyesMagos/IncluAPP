@@ -131,7 +131,6 @@
             android:label="@string/title_activity_proyectos" >
         </activity>
 
-
         <service android:name="com.parse.PushService" />
 
         <receiver android:name="com.parse.ParseBroadcastReceiver" >
@@ -162,10 +161,13 @@
         </receiver>
 
         <activity
-            android:name="co.gov.dps.incluapp.presentacion.proyectos.ProjectActivityCreate"
+            android:name=".presentacion.proyectos.ProjectActivityCreate"
             android:label="@string/title_activity_project_activity_create" >
         </activity>
-
+        <activity
+            android:name=".SingUpActivity"
+            android:label="@string/title_activity_sing_up" >
+        </activity>
     </application>
 
 </manifest>

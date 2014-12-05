@@ -57,6 +57,10 @@ public class ProyectosActivity extends Activity {
 		txtinicio = (TextView) findViewById(R.id.proyectos_textInicio);
 		txtTags = (TextView) findViewById(R.id.proyectos_txt_tag);
 
+		ActionBar actionBar = getActionBar();
+		actionBar.setBackgroundDrawable(new ColorDrawable(Color
+				.parseColor("#6699cc")));
+		
 		controlador.showProyecto();
 	}
 

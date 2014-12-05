@@ -78,7 +78,7 @@ public class CustomAdapterTimeLine extends BaseAdapter {
 		} else if (getItem(position) instanceof Proyecto) {
 			Proyecto proyecto = (Proyecto) getItem(position);
 			viewHolder.imgIcon.setImageDrawable(context.getResources()
-					.getDrawable(R.drawable.icono_experiencia));
+					.getDrawable(R.drawable.project_icon));
 			viewHolder.txtTitle.setText(proyecto.getActSubvencion());
 			viewHolder.txtDescr.setText(proyecto.getDescripcionResPropuesto());
 		}

@@ -2,8 +2,11 @@ package co.gov.dps.incluapp.presentacion.eventos;
 
 import java.util.Date;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.DialogFragment;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -34,6 +37,7 @@ public class CreateEventActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_create_event);
+		initComponents();
 	}
 
 	public void initComponents() {
@@ -42,6 +46,10 @@ public class CreateEventActivity extends Activity {
 		this.txtDescriptionEvent = (EditText) super
 				.findViewById(R.id.editTxtDescr);
 		this.saveButton = (Button) super.findViewById(R.id.button1);
+		
+		ActionBar actionBar = getActionBar();
+		actionBar.setBackgroundDrawable(new ColorDrawable(Color
+				.parseColor("#6699cc")));
 	}
 
 	public void setDate(Date date) {

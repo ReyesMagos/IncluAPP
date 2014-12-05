@@ -16,13 +16,14 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Proyectos"
-        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textAppearance="?android:attr/textAppearanceLarge"
         android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp" >
+        android:layout_marginTop="15dp"
+        android:layout_weight="1" >
 
         <TextView
             android:id="@+id/textView2"
@@ -46,7 +47,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp" >
+        android:layout_marginTop="15dp" 
+        android:layout_weight="1">
 
         <TextView
             android:id="@+id/textView3"
@@ -67,7 +69,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:layout_weight="1" >
 
         <TextView
             android:id="@+id/textView4"
@@ -88,7 +91,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="15dp" >
+        android:layout_marginTop="15dp"
+        android:layout_weight="1" >
 
         <TextView
             android:id="@+id/textView5"

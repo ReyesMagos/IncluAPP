@@ -52,8 +52,8 @@
             android:label="@string/title_activity_create_event" >
         </activity>
         <activity
-            android:name="co.gov.dps.incluapp.presentacion.proyectos.ProyectosActivity"
-            android:label="@string/title_activity_proyectos" >
+            android:name="co.gov.dps.incluapp.presentacion.expericiencias.ComentExperienciaActivity"
+            android:label="@string/title_activity_coment_experiencia" >
         </activity>
     </application>
 

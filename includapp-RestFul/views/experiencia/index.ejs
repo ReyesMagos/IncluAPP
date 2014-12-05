@@ -1,0 +1,29 @@
+<div class="container">
+	<h1>Experiencias</h1>
+	<table class="table table-hover" >
+		<th>Titulo</th>
+		<th>Descripcion</th>
+		<th>Fecha Creación</th>
+		<th>Estado</th>
+		<th></th>
+		<th></th>
+		<% _.each(expiriences, function(experience) { %>
+		<tr>
+			<td><%=experience.title%></td>
+			<td><%=experience.description%></td>
+			<td><%=experience.createdAt%></td>
+			<td><%=experience.state%></td>
+			<td>
+				<a href="/experiencia/show/<%= experience.id %>" class="btn btn-sm btn-primary">Ver</a>
+			</td>
+			<td>
+				<form action="/experiencia/destroy/<%= experience.id%>" method="POST" accept-charset="utf-8">
+					<input type="hidden" name="_method" value="delete"/>
+					<input type="submit"  class="btn btn-sm btn-danger" value="Delete"/>
+					<input type="hidden" name="_csrf" value="<%= _csrf %>"/>
+				</form>
+			</td>
+		</tr>
+		<%})%>
+	</table>
+</div>

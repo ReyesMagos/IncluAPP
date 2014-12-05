@@ -57,8 +57,13 @@ public class ExperienciasActivity extends Activity {
 
 	}
 
+	public void showComents_Click(View view) {
+		
+		controller.changeActivity(ComentExperienciaActivity.class);
+	}
+
 	public void btnMap_Click(View view) {
-		//1 para mostrar uno
+		// 1 para mostrar uno
 		Comunicador.setMapOption(1);
 		controller.changeActivity(MapsActivity.class);
 	}

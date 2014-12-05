@@ -54,7 +54,7 @@ public class FactoryExperiencias implements IFactoryExperiencias {
 		coment.setPuntuation(4);
 		coment.setUserName("Ana Zapata");
 		listaComentarios.add(coment);
-		
+		expirience.setComents(listaComentarios);
 		expirience.setUser(user);
 		expirience.setUbication(ubication);
 		expirience.setDescription(" enim ad minima veniam, "

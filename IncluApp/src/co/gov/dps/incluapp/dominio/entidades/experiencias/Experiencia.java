@@ -45,6 +45,12 @@ public class Experiencia {
 	public void setEstado(boolean estado) {
 		this.estado = estado;
 	}
+	public List<ComentExperiencia> getComents() {
+		return coments;
+	}
+	public void setComents(List<ComentExperiencia> coments) {
+		this.coments = coments;
+	}
 	
 	
 	

@@ -52,7 +52,7 @@
             android:label="@string/title_activity_create_event" >
         </activity>
         <activity
-            android:name="co.gov.dps.incluapp.presentacion.expericiencias.ComentExperienciaActivity"
+            android:name=".presentacion.expericiencias.ComentExperienciaActivity"
             android:label="@string/title_activity_coment_experiencia" >
         </activity>
         <activity
@@ -64,8 +64,16 @@
             android:label="Read QR Code Activity" >
         </activity>
         <activity
-            android:name="co.gov.dps.incluapp.presentacion.eventos.EventInfoActivity"
+            android:name=".presentacion.eventos.EventInfoActivity"
             android:label="@string/title_activity_event_info" >
+        </activity>
+         <activity
+            android:name="co.gov.dps.incluapp.presentacion.proyectos.ProyectosActivity"
+            android:label="@string/title_activity_proyectos" >
+        </activity>
+        <activity
+            android:name="co.gov.dps.incluapp.presentacion.proyectos.ComentarioProyectosActivity"
+            android:label="@string/title_activity_comentario_proyectos" >
         </activity>
     </application>
 

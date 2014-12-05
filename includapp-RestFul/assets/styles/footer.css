@@ -1,0 +1,20 @@
+
+
+#wrapper {
+  display: flex;  /* use the flex model */
+  min-height: 700%;
+  flex-direction: column;  /* learn more: http://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/ */
+}
+
+
+
+#footContainer {
+  background: #f78586;
+  height: 250px;
+}
+
+@media only screen and (max-device-width: 480px) {
+    #footer {
+        height: auto;
+    }
+}

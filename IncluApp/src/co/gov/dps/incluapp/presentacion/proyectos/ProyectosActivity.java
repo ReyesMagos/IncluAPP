@@ -7,23 +7,22 @@ import co.gov.dps.incluapp.R.menu;
 import co.gov.dps.incluapp.controladores.ProyectosController;
 import co.gov.dps.incluapp.dominio.entidades.projectos.Proyecto;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 public class ProyectosActivity extends Activity {
-	
+
 	private TextView txtActSub;
 	private ImageView imProfile;
 	private TextView txtDescription;
 	private TextView txtGrupo;
-	
+
 	private ProyectosController controlador;
-	
-	
-	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -31,18 +30,23 @@ public class ProyectosActivity extends Activity {
 		setContentView(R.layout.activity_proyectos);
 		init();
 	}
-	
-	public void init(){
+
+	public void showComments(View view) {
+		Intent i = new Intent(this, ComentarioProyectosActivity.class);
+		startActivity(i);
+	}
+
+	public void init() {
 		controlador = new ProyectosController(this);
-		
+
 		txtActSub = (TextView) findViewById(R.id.proyecto_txt_ActSub);
 		txtDescription = (TextView) findViewById(R.id.proyecto_txt_description);
 		txtGrupo = (TextView) findViewById(R.id.proyectos_txt_grupometa);
-		
+
 		controlador.showProyecto();
 	}
-	
-	public void showProyecto(Proyecto proyecto){
+
+	public void showProyecto(Proyecto proyecto) {
 		txtActSub.setText(proyecto.getActSubvencion());
 		txtDescription.setText(proyecto.getDescripcionResPropuesto());
 		txtGrupo.setText(proyecto.getGrupoMeta());

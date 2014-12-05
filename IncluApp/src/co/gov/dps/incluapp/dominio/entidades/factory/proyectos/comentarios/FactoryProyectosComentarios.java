@@ -23,9 +23,9 @@ public class FactoryProyectosComentarios implements IFactoryProyectosComentarios
 	public List<ProyectosComentario> getProyectosComentarios() {
 		
 		this.comentarios = new ArrayList<ProyectosComentario>();
-		User user1 = new User("Pedro", "Retón", "21", "Estudiante");
 		
-		ProyectosComentario comment = new ProyectosComentario(user1, "1	", "Muy bacano");
+		
+		ProyectosComentario comment = new ProyectosComentario("pedro", "1	", "Muy bacano");
 		
 		
 		return null;

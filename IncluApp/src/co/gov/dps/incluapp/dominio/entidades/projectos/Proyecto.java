@@ -1,5 +1,9 @@
 package co.gov.dps.incluapp.dominio.entidades.projectos;
 
+import java.util.List;
+
+import co.gov.dps.incluapp.dominio.entidades.proyectos.comentarios.ProyectosComentario;
+
 public class Proyecto {
 	
 	private String actSubvencion;
@@ -16,6 +20,7 @@ public class Proyecto {
 	private String programa;
 	private String tipoTema;
 	private String um;
+	private List<ProyectosComentario> comentario;
 	
 	public Proyecto(String actSubvencion, int cantidad, int consecutivo,
 			String descripcionResPropuesto, String entidadEjecutora,
@@ -154,6 +159,15 @@ public class Proyecto {
 	public void setUm(String um) {
 		this.um = um;
 	}
+
+	public List<ProyectosComentario> getComentario() {
+		return comentario;
+	}
+
+	public void setComentario(List<ProyectosComentario> comentario) {
+		this.comentario = comentario;
+	}
+	
 	
 	
 	

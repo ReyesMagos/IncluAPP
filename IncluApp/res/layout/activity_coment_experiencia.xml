@@ -8,6 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+      android:background="@drawable/fondo"
     tools:context="co.gov.dps.incluapp.presentacion.expericiencias.ComentExperienciaActivity" >
 
     <ListView
@@ -53,6 +54,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:onClick="btnAddComent_Click"
-        android:src="@drawable/ic_launcher" />
+        android:src="@drawable/comentar_btn" />
 
 </LinearLayout>

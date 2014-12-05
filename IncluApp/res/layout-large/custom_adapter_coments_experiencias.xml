@@ -21,6 +21,7 @@
             android:layout_weight="1"
             android:textColor="#000000"
             android:textStyle="bold"
+            android:textSize="26sp"
             android:layout_height="wrap_content"
             android:text="user" />
 
@@ -30,6 +31,7 @@
             android:layout_weight="1"
             android:textColor="#000000"
              android:textStyle="bold"
+              android:textSize="26sp"
             android:layout_height="wrap_content"
             android:text="date" />
     </LinearLayout>
@@ -39,6 +41,7 @@
         android:layout_width="wrap_content"
         android:textColor="#000000"
         android:gravity="center"
+         android:textSize="24sp"
         android:layout_height="wrap_content"
         android:text="comet" />
 

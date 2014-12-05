@@ -5,6 +5,7 @@ import co.gov.dps.incluapp.dominio.adaptadores.evento.CustomAdapterEventos;
 import co.gov.dps.incluapp.dominio.entidades.eventos.FactoryEvent;
 import android.app.ActionBar;
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -56,7 +57,7 @@ public class EventosListActivityFragment extends Fragment {
 		
 		switch (item.getItemId()) {
 		case R.id.create_event:
-			
+			startActivity(new Intent(getActivity(), CreateEventActivity.class));
 			break;
 
 		default:

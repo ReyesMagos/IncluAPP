@@ -50,5 +50,9 @@ public class FactoryEvent {
 		return eventos;
 
 	}
+	
+	public void setEvent(Evento evento){
+		this.listEventos.add(evento);
+	}
 
 }

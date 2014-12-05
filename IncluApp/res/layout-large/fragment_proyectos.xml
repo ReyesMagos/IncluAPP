@@ -9,9 +9,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="15dp"
         android:text="Proyectos"
         android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="40sp"
         android:textStyle="bold" />
 
     <ListView

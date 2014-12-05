@@ -6,118 +6,135 @@
     android:orientation="vertical"
     tools:context="co.gov.dps.incluapp.presentacion.proyectos.ProyectosActivity" >
 
-    <TextView
-        android:id="@+id/proyecto_txt_ActSub"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="ActSub"
-        android:textSize="18sp" />
-
-    <ImageView
-        android:id="@+id/proyecto_im_profile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:src="@drawable/ic_launcher" />
-
-    <TextView
-        android:id="@+id/proyecto_textView"
+    <ScrollView
+        android:id="@+id/scrollView1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="Descripcion: "
-        android:textStyle="bold" />
+        android:layout_height="460dp" >
 
-    <TextView
-        android:id="@+id/proyecto_txt_description"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="TextView" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/proyecto_textRequiereTV"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="Requiere; "
-        android:textStyle="bold" />
+            <TextView
+                android:id="@+id/proyecto_txt_ActSub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="ActSub"
+                android:textSize="18sp" />
 
-    <TextView
-        android:id="@+id/proyectos_textRequiere"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="TextView" />
+            <ImageView
+                android:id="@+id/proyecto_im_profile"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:src="@drawable/ic_launcher" />
 
-    <TextView
-        android:id="@+id/proyecto_textInicioTV"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="Cuando inició: "
-        android:textStyle="bold" />
+            <TextView
+                android:id="@+id/proyecto_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Descripcion: "
+                android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/proyectos_textInicio"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="Inicio el " />
+            <TextView
+                android:id="@+id/proyecto_txt_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="TextView" />
 
-    <TextView
-        android:id="@+id/proyecto_tagsTV"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="Tags: "
-        android:textStyle="bold" />
+            <TextView
+                android:id="@+id/proyecto_textRequiereTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Requiere; "
+                android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/proyectos_txt_tag"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="TextView" />
+            <TextView
+                android:id="@+id/proyectos_textRequiere"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="TextView" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+            <TextView
+                android:id="@+id/proyecto_textInicioTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Cuando inició: "
+                android:textStyle="bold" />
 
-        <ImageView
-            android:id="@+id/btn_coment"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="showComments"
-            android:src="@drawable/comentar_btn" />
+            <TextView
+                android:id="@+id/proyectos_textInicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Inicio el " />
 
-        <ImageView
-            android:id="@+id/btn_compartir"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/share_btn" />
+            <TextView
+                android:id="@+id/proyecto_tagsTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Tags: "
+                android:textStyle="bold" />
 
-        <ImageView
-            android:id="@+id/btn_llamar"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="call_Click"
-            android:src="@drawable/mensaje_btn" />
-          />
-    </LinearLayout>
+            <TextView
+                android:id="@+id/proyectos_txt_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TextView" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/btn_coment"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:onClick="showComments"
+                    android:src="@drawable/comentar_btn" />
+
+                <ImageView
+                    android:id="@+id/btn_compartir"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/share_btn" />
+
+                <ImageView
+                    android:id="@+id/btn_llamar"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:onClick="call_Click"
+                    android:src="@drawable/mensaje_btn" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

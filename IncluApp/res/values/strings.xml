@@ -41,7 +41,7 @@
     </array>
     <array name="nav_drawer_icons">
         <item>@drawable/home_icon</item>
-        <item>@drawable/</item>
+        <item>@drawable/home_icon</item>
         <item>@drawable/messages</item>
     </array>
 
